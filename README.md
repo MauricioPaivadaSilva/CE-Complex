@@ -9,7 +9,7 @@ A biblioteca consiste em um sistema que irá calcular e apresentar de forma grá
 
 ### Forma de Instalação
 
-`pip`
+. . .
 
 ## Funcionalidades esperadas
 As funcionalidades esperadas consistem em:
