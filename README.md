@@ -14,7 +14,7 @@ A biblioteca consiste em um sistema que irá calcular e apresentar de forma grá
 ## Funcionalidades esperadas
 As funcionalidades esperadas consistem em:
 
-[ ] Receber os valores que constituem um número complexo (em formato retanhular/trigonométrico);
+[X] Receber os valores que constituem um número complexo (em formato retanhular/trigonométrico);
 
 [ ] Receber os valores que constituem um número complexo (em formato polar);
 
