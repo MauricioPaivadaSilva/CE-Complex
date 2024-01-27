@@ -14,13 +14,13 @@ A biblioteca consiste em um sistema que irá calcular e apresentar de forma grá
 ## Funcionalidades esperadas
 As funcionalidades esperadas consistem em:
 
-[X] Receber os valores que constituem um número complexo (em formato retanhular/trigonométrico);
+- [X] Receber os valores que constituem um número complexo (em formato retanhular/trigonométrico);
 
-[ ] Receber os valores que constituem um número complexo (em formato polar);
+- [ ] Receber os valores que constituem um número complexo (em formato polar);
 
-[ ] Gerar ciclo trigonométrico esperado para representar os números complexos;
+- [ ] Gerar ciclo trigonométrico esperado para representar os números complexos;
 
-[ ] Gerar o gráfico de senoidal que representa uma função de onda de tensão elétrica.
+- [ ] Gerar o gráfico de senoidal que representa uma função de onda de tensão elétrica.
 
 ## Resultados obtidos
 .
