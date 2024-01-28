@@ -7,6 +7,10 @@
 ## Sobre a biblioteca
 A biblioteca consiste em um sistema que irá calcular e apresentar de forma gráfica ou numérica o resultado de operações matemáticas feitas utilizando o conjunto dos números complexos.
 
+### Requisitos
+
+. . .
+
 ### Forma de Instalação
 
 . . .
@@ -14,15 +18,19 @@ A biblioteca consiste em um sistema que irá calcular e apresentar de forma grá
 ## Funcionalidades esperadas
 As funcionalidades esperadas consistem em:
 
-- [X] Receber os valores que constituem um número complexo (em formato retanhular/trigonométrico);
-
+- [ ] Receber os valores que constituem um número complexo (em formato retanhular/trigonométrico);
 - [ ] Receber os valores que constituem um número complexo (em formato polar);
-
 - [ ] Gerar ciclo trigonométrico esperado para representar os números complexos;
-
 - [ ] Gerar o gráfico de senoidal que representa uma função de onda de tensão elétrica.
 
 ## Resultados obtidos
+.
+
+.
+
+.
+
+## Comandos de útilização
 .
 
 .
