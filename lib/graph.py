@@ -84,4 +84,48 @@ class GraphCreate():
             r = (i*pi)/180
             rad.append(r)
         
+    def GraphCreate(num1, num2):    #   Criação do gráfico
         
+        #   Importação das variáveis globais
+
+        global rad
+        global xlim
+        global xlim_
+        global ylim
+        global ylim_
+
+        #   Gerando as variáveis locais
+
+        sin = []
+
+        if(((type(num1) == type("x")) and (num1 == "x")) or ((type(num1) == type("x"))) and (num1 == "y")):    #   Gerando o gráfico para todo valor em x que foi convertido.
+            try:
+                for i in rad:
+                    si = np.sin(i)
+                    sin.append(si)
+            except:
+                pass
+            plt.plot(num2, sin)
+            plt.xlim(xlim_, xlim)
+            plt.ylim(ylim_, ylim)
+
+            #   Adicionando o eixo x.
+            eixo_x = mpatches.FancyArrowPatch(
+                ((xlim_ - 2), 0), 
+                ((xlim + 2), 0), 
+                color='black', 
+                mutation_scale=15, 
+                arrowstyle='->'
+            )
+            plt.gca().add_patch(eixo_x)
+
+            #   Adicionando o eixo y.
+            eixo_y = mpatches.FancyArrowPatch(
+                (0, ylim_),
+                (0, ylim),
+                color="black",
+                mutation_scale=15,
+                arrowstyle='->'
+            )
+            plt.gca().add_patch(eixo_y)
+            plt.show()
