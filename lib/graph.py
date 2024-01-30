@@ -142,3 +142,5 @@ class GraphCreate():
             )
             plt.gca().add_patch(eixo_y)
             plt.show()
+        else:
+            return(ERRO)
