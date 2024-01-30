@@ -22,9 +22,22 @@ ylim_ = -ylim
 
 PI = 3.141592653589793
 
+### Criação das mensagens de retornos de erro
+
+ERRO = "\n      \033[1;31;40mERRO!\033[m   \n"
+FUNCAO_NAO_IMPLEMENTADA = "\n      \033[1;31;40mERRO!\033[m \033[3;33mFunção não implementada\033[m   \n"
+
+
+##########################################
+######      Início do código        ######
+##########################################
 class GraphCreate():
     def __init__(self):
         pass
+
+    #   Chamada dos erros de retorno.
+    global ERRO
+    global FUNCAO_NAO_IMPLEMENTADA
 
     def Calculate(num1, num2):  #   Calculando os valores do gráfico para todo x e todo y.
         
@@ -67,9 +80,9 @@ class GraphCreate():
                 ey = y+Y
         
         elif((type(num1) == type(0.0)) and (type(num2) == type(0.0))): #   Verificando os valores para fazer a representação dos números complexos.
-            return("\n  Função ainda não implementada\n")
+            return(FUNCAO_NAO_IMPLEMENTADA)
         else:
-            return("\n  Erro!\n")
+            return(ERRO)
     
     def ConvertInRad(eq):   #   Conversão dos valores de grau em radianos.
 
