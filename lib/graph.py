@@ -28,7 +28,7 @@ PI = 3.141592653589793
 ##########################################
 ######      Início do código        ######
 ##########################################
-class GraphCreate():
+class GraphCreate:
     def __init__(self):
         pass
 
@@ -77,9 +77,9 @@ class GraphCreate():
                 ey = y+Y
         
         elif((type(num1) == type(0.0)) and (type(num2) == type(0.0))): #   Verificando os valores para fazer a representação dos números complexos.
-            return(Err.FuncaoNaoImplementada)
+            return(Err.FuncaoNaoImplementada())
         else:
-            return(Err.ErroGenerico)
+            return(Err.ErroGenerico())
     
     def ConvertInRad(eq):   #   Conversão dos valores de grau em radianos.
 
@@ -140,4 +140,4 @@ class GraphCreate():
             plt.gca().add_patch(eixo_y)
             plt.show()
         else:
-            return(Err.ErroGenerico)
+            return(Err.ErroGenerico())

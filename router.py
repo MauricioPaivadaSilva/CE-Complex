@@ -9,7 +9,7 @@ from lib.err import Err as Err
 
 #   Recepção e interpretação dos dados para serem enviados a biblioteca
 
-class Tratamento():
+class Tratamento:
     def __init__():
         pass
 
@@ -46,6 +46,6 @@ class Tratamento():
                     real = float(complex)
                     return(...)
                 except ValueError:
-                    return(Err.ValorInseridoIncorretamente)
+                    return(Err.ValorInseridoIncorretamente())
         else:
-            return(Err.ErroGenerico)
+            return(Err.ErroGenerico())
