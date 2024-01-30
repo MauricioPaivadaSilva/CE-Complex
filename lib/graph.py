@@ -13,6 +13,8 @@ X = []
 y = []
 Y = []
 
+rad = []
+
 xlim = 180
 ylim = 1.5
 xlim_ = -xlim
@@ -33,7 +35,7 @@ class GraphCreate():
         global y
         global Y
 
-        if((type(num1) == type("x")) and (num1 == "x")): #   Criação dos valores para x até um valor com que irá sempre aparecer no gráfico.
+        if((type(num1) == type("x")) and (num1 == "x")): #   Criação dos valores para x (como grau).
             a = 0
             b = 0
             i = True
@@ -42,13 +44,13 @@ class GraphCreate():
                 b += 1
                 x.append(a)
                 X.append(b)
-                if(b == 360*8): 
+                if(b == 360): 
                     i = False
             x.sort()
             x.append(0)
             ex = x+X
         
-        elif((type(num1) == "y") and (num1 == "y")): #   Criação dos valores para y até um valor com que irá sempre aparecer no gráfico.
+        elif((type(num1) == "y") and (num1 == "y")): #   Criação dos valores para y (como grau).
             a = 0
             b = 0
             i = True
@@ -57,7 +59,7 @@ class GraphCreate():
                 b += 1
                 y.append(a)
                 Y.append(b)
-                if(b == 360*8):
+                if(b == 360):
                     i = False
                 y.sort()
                 y.append(0)
@@ -68,3 +70,18 @@ class GraphCreate():
             return("\n  Função ainda não implementada\n")
         else:
             return("\n  Erro!\n")
+    
+    def ConvertInRad(eq):   #   Conversão dos valores de grau em radianos.
+
+        #   Importação das variáveis globais.
+
+        global rad
+        global PI
+
+        pi = PI
+
+        for i in eq:
+            r = (i*pi)/180
+            rad.append(r)
+        
+        
