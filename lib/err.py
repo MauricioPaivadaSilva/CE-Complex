@@ -3,14 +3,14 @@
 #
 
 class Err:
-    def __init__(self) -> None:
+    def __init__() -> None:
         pass
 
-    def ErroGenerico(self):
+    def ErroGenerico():
         return("\n      \033[1;31;40mERRO!\033[m   \n")
     
-    def FuncaoNaoImplementada(self):
+    def FuncaoNaoImplementada():
         return("\n      \033[1;31;40mERRO!\033[m \033[3;33mFunção não implementada\033[m   \n")
     
-    def ValorInseridoIncorretamente(self):
+    def ValorInseridoIncorretamente():
         return("\n      \033[1;31;40mERRO!\033[m \033[0;31;40mValor inserido de forma incorreta.\033[m\n")
