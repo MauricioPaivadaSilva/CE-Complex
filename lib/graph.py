@@ -6,6 +6,8 @@ import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
 import numpy as np
 
+from lib.err import Err as Err
+
 ##  Criação de variáveis globais
 
 x = []
@@ -21,11 +23,6 @@ xlim_ = -xlim
 ylim_ = -ylim
 
 PI = 3.141592653589793
-
-### Criação das mensagens de retornos de erro
-
-ERRO = "\n      \033[1;31;40mERRO!\033[m   \n"
-FUNCAO_NAO_IMPLEMENTADA = "\n      \033[1;31;40mERRO!\033[m \033[3;33mFunção não implementada\033[m   \n"
 
 
 ##########################################
@@ -80,9 +77,9 @@ class GraphCreate():
                 ey = y+Y
         
         elif((type(num1) == type(0.0)) and (type(num2) == type(0.0))): #   Verificando os valores para fazer a representação dos números complexos.
-            return(FUNCAO_NAO_IMPLEMENTADA)
+            return(Err.FuncaoNaoImplementada)
         else:
-            return(ERRO)
+            return(Err.ErroGenerico)
     
     def ConvertInRad(eq):   #   Conversão dos valores de grau em radianos.
 
@@ -143,4 +140,4 @@ class GraphCreate():
             plt.gca().add_patch(eixo_y)
             plt.show()
         else:
-            return(ERRO)
+            return(Err.ErroGenerico)

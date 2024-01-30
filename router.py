@@ -1,10 +1,11 @@
 #
 #   Direcionamento e tratamento das informações que irão para a biblioteca.
 #
-#   Iniciando a chamada da lib
+#   Iniciando a chamada da lib e do dicionário de erros.
 #
 
 from lib.graph import GraphCreate as GC
+from lib.err import Err as Err
 
 #   Recepção e interpretação dos dados para serem enviados a biblioteca
 
@@ -38,5 +39,13 @@ class Tratamento():
                 R = float(complex[0])
                 Im = float(complex[1])
         elif(("i" not in complex) or ("j" not in complex)):
-            if(complex == "x"):
+            if(complex == "x" or complex == "y"):
                 GC.Calculate(complex)
+            else:
+                try:
+                    real = float(complex)
+                    return(...)
+                except ValueError:
+                    return(Err.ValorInseridoIncorretamente)
+        else:
+            return(Err.ErroGenerico)
