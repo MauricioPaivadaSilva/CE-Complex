@@ -26,8 +26,6 @@ ylim = 1.5
 xlim_ = -xlim
 ylim_ = -ylim
 
-PI = 3.141592653589793
-
 
 ##########################################
 ######      Início do código        ######
@@ -92,12 +90,9 @@ class GraphCreate():
         #   Importação das variáveis globais.
 
         global rad
-        global PI
-
-        pi = PI
 
         for i in eq:
-            r = (i*pi)/180
+            r = (i*np.pi)/180
             rad.append(r)
         
         GraphCreate.Graphcreate(num1, eq)
@@ -150,9 +145,32 @@ class GraphCreate():
             plt.show()
 
         elif((type(num1) == type(0.0)) and (type(num2) == type(0.0))):  #   Gerando o gráfico de vetor com números complexos
-            plt.plot([0, num1], [0, num2])
-            plt.xlim(-2, 2)
-            plt.ylim(-2, 2)
+            
+            raio = 1
+            theta = np.linspace(0, 2*np.pi, 100)
+            x = raio*np.cos(theta)
+            y = raio*np.sin(theta)
+            p = np.sqrt((num1**2)+(num2**2))
+
+            
+            vec_x = num1/p
+            vec_y = num2/p
+
+            plt.plot(x, y)
+            plt.quiver(
+                0, 
+                0, 
+                vec_x, 
+                vec_y, 
+                angles='xy', 
+                scale_units='xy', 
+                scale=1, 
+                color='black'
+            )
+
+            # plt.plot([0, num1], [0, num2])
+            plt.xlim(-1.5, 1.5)
+            plt.ylim(-1.5, 1.5)
 
             #   Adicionando o eixo x.
             eixo_x = mpatches.FancyArrowPatch(
@@ -173,7 +191,11 @@ class GraphCreate():
                 arrowstyle='->'
             )
             plt.gca().add_patch(eixo_y)
+            plt.gca().set_aspect('equal', adjustable='box')
 
             plt.show()
         else:
             return(Err.ErroGenerico())
+        
+if __name__ == '__main__':
+    GraphCreate.Calculate(2.0, -2.0)
