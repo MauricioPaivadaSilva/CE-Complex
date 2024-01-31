@@ -6,6 +6,10 @@ import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
 import numpy as np
 
+#
+#   Iniciando os a chamada dos plug-ins necessários.
+#
+
 from lib.err import Err as Err
 
 ##  Criação de variáveis globais
@@ -31,10 +35,6 @@ PI = 3.141592653589793
 class GraphCreate:
     def __init__(self):
         pass
-
-    #   Chamada dos erros de retorno.
-    global ERRO
-    global FUNCAO_NAO_IMPLEMENTADA
 
     def Calculate(num1, num2):  #   Calculando os valores do gráfico para todo x e todo y.
         

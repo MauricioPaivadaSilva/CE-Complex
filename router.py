@@ -38,7 +38,7 @@ class Tratamento:
                 complex = complex.split("+")
                 R = float(complex[0])
                 Im = float(complex[1])
-        elif(("i" not in complex) or ("j" not in complex)):
+        else:
             if(complex == "x" or complex == "y"):
                 GC.Calculate(complex)
             else:
@@ -47,5 +47,3 @@ class Tratamento:
                     return(...)
                 except ValueError:
                     return(Err.ValorInseridoIncorretamente())
-        else:
-            return(Err.ErroGenerico())
