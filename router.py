@@ -22,18 +22,18 @@ class Tratamento:
                 complex = complex.split('-')
                 R = -float(complex[1])
                 Im = -float(complex[2])
-                ...
+                return(GC.Calculate(R, Im))
             elif(cont_sig == 1):
                 if('+' in complex):
                     complex = complex.split("+")
                     R = float(complex[0])
                     Im = float(complex[1])
-                    ...
+                    return(GC.Calculate(R, Im))
                 else:
                     complex = complex.split("-")
                     R = float(complex[0])
                     Im = -float(complex[1])
-                    ...
+                    return(GC.Calculate(R, Im))
             else:
                 complex = complex.split("+")
                 R = float(complex[0])
@@ -44,6 +44,6 @@ class Tratamento:
             else:
                 try:
                     real = float(complex)
-                    return(...)
+                    return(GC.Calculate(real, 0))
                 except ValueError:
                     return(Err.ValorInseridoIncorretamente())
