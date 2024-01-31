@@ -196,6 +196,3 @@ class GraphCreate():
             plt.show()
         else:
             return(Err.ErroGenerico())
-        
-if __name__ == '__main__':
-    GraphCreate.Calculate(2.0, -2.0)
