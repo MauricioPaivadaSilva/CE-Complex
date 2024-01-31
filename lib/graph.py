@@ -59,7 +59,8 @@ class GraphCreate:
             x.sort()
             x.append(0)
             ex = x+X
-        
+            GraphCreate.GraphCreate(num1, None)
+
         elif((type(num1) == "y") and (num1 == "y")): #   Criação dos valores para y (como grau).
             a = 0
             b = 0
@@ -75,9 +76,13 @@ class GraphCreate:
                 y.append(0)
                 Y.sort()
                 ey = y+Y
+                GraphCreate.GraphCreate(num1, None)
         
         elif((type(num1) == type(0.0)) and (type(num2) == type(0.0))): #   Verificando os valores para fazer a representação dos números complexos.
-            return(Err.FuncaoNaoImplementada())
+
+            GraphCreate.GraphCreate(num1, num2)
+
+            # return(Err.FuncaoNaoImplementada())
         else:
             return(Err.ErroGenerico())
     
