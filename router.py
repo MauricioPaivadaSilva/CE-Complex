@@ -13,37 +13,49 @@ class Tratamento:
     def __init__():
         pass
 
-    def Complex(complex):
-        if(("i" in complex) or ("j" in complex)):
-            complex = complex[:-1]
-            cont_sig = complex.cont('-')
+    def Complex(complexo):
+        if(("i" in complexo) or ("j" in complexo)):
+            complexo = complexo[:-1]
+            cont_sig = complexo.count('-')
 
             if(cont_sig == 2):
-                complex = complex.split('-')
-                R = -float(complex[1])
-                Im = -float(complex[2])
+                complexo = complexo.split('-')
+                R = -float(complexo[1])
+                Im = -float(complexo[2])
                 return(GC.Calculate(R, Im))
             elif(cont_sig == 1):
-                if('+' in complex):
-                    complex = complex.split("+")
-                    R = float(complex[0])
-                    Im = float(complex[1])
+                if('+' in complexo):
+                    complexo = complexo.split("+")
+                    R = float(complexo[0])
+                    Im = float(complexo[1])
                     return(GC.Calculate(R, Im))
                 else:
-                    complex = complex.split("-")
-                    R = float(complex[0])
-                    Im = -float(complex[1])
-                    return(GC.Calculate(R, Im))
+                    complexo = complexo.split("-")
+                    if(len(complexo) > 2):
+                        R = float(complexo[0])
+                        Im = -float(complexo[1])
+                        return(GC.Calculate(R, Im))
+                    else:
+                        R = float(0)
+                        Im = -float(complexo[1])
+                        return(GC.Calculate(R, Im))
+            elif(complexo.count('+') == 1):
+                complexo = complexo.split("+")
+                print(complexo)
+                R = float(complexo[0])
+                Im = float(complexo[1])
+                return(GC.Calculate(R, Im))
             else:
-                complex = complex.split("+")
-                R = float(complex[0])
-                Im = float(complex[1])
+                print(complexo)
+                R = float(0)
+                Im = float(complexo[0])
+                return(GC.Calculate(R, Im))
         else:
-            if(complex == "x" or complex == "y"):
-                GC.Calculate(complex)
+            if(complexo == "x" or complexo == "y"):
+                GC.Calculate(complexo)
             else:
                 try:
-                    real = float(complex)
+                    real = float(complexo)
                     return(GC.Calculate(real, 0))
                 except ValueError:
                     return(Err.ValorInseridoIncorretamente())

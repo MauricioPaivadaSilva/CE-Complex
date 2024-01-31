@@ -9,7 +9,7 @@ A presente biblioteca interpreta dados inseridos em formato de coordenadas e de 
 
 ## Motivação
 
-O presente trabalho tem como motivação o trabalho gerado pelo LABin - Labratório de educação inclusiva, que tem como intuito o a pesquisa-ação
+O presente projeto tem como motivação o trabalho desenvolvido pelo LABin - Labratório de educação inclusiva, que tem como intuito o a pesquisa-ação na área do ensino inclusivo.
 
 ### Requisitos
 
@@ -22,13 +22,17 @@ O presente trabalho tem como motivação o trabalho gerado pelo LABin - Labrató
 ## Funcionalidades esperadas
 As funcionalidades esperadas consistem em:
 
-- [X] Receber os valores que constituem um número complexo (em formato retanhular/trigonométrico);
-- [ ] Receber os valores que constituem um número complexo (em formato polar);
-- [ ] Gerar ciclo trigonométrico esperado para representar os números complexos;
-- [X] Gerar o gráfico de senoidal que representa uma função de onda de tensão elétrica.
+- [x] Receber dados de valores puramente reais;
+- [x] Receber dados de números complexos;
+- [x] Gerar o gráfico de função senoidal;
+- [x] Gerar o ciclo trigonométrico;
+- [x] Gerar o vetor dentro do ciclo trigonométrico;
+- [ ] Apresentar mais de um gráfico em uma única tela;
+- [ ] Fazer a animação do ciclo trigonométrico;
+- [ ] Fazer a animação do segundo gráfico.
 
 ## Resultados obtidos
-Os graficos até entã gerados são de função senoidal, o que proporciona a capacidade de representar graficamente a tenção em AC (Corrente Alternada).
+
 
 ## Formas de utilização
 .

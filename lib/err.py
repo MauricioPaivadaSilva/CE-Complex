@@ -3,7 +3,7 @@
 #
 
 class Err:
-    def __init__() -> None:
+    def __init__(self):
         pass
 
     def ErroGenerico():
