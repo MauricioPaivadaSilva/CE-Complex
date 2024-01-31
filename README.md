@@ -24,7 +24,12 @@ O presente projeto tem como motivação o trabalho desenvolvido pelo LABin - Lab
 
 ### Forma de Instalação
 
-. . .
+* Para instalar usando o setup.py: 
+
+`pip install .`
+* Para instalar usando o requirements.txt:
+
+`pip install -r requirements.txt`
 
 ## Funcionalidades esperadas
 

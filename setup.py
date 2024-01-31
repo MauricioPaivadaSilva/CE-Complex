@@ -7,8 +7,8 @@ setup(
     author="Maurício Paiva da Silva",
     license="MIT",
     install_requires=[
-        'numpy',
-        'matplotlib',
+        'numpy==1.26.3',
+        'matplotlib==3.8.2',
     ],
     keywords=[
         "Números Complexos",
