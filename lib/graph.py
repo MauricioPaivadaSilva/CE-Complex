@@ -139,5 +139,31 @@ class GraphCreate:
             )
             plt.gca().add_patch(eixo_y)
             plt.show()
+
+        elif((type(num1) == type(0.0)) and (type(num2) == type(0.0))):  #   Gerando o gráfico de vetor com números complexos
+            plt.plot(num1, num2)
+            plt.xlim(xlim_, xlim)
+            plt.ylim(ylim_, ylim)
+
+            #   Adicionando o eixo x.
+            eixo_x = mpatches.FancyArrowPatch(
+                ((xlim_ - 2), 0), 
+                ((xlim + 2), 0), 
+                color='black', 
+                mutation_scale=15, 
+                arrowstyle='->'
+            )
+            plt.gca().add_patch(eixo_x)
+
+            #   Adicionando o eixo y.
+            eixo_y = mpatches.FancyArrowPatch(
+                (0, ylim_),
+                (0, ylim),
+                color="black",
+                mutation_scale=15,
+                arrowstyle='->'
+            )
+            plt.gca().add_patch(eixo_y)
+            plt.show()
         else:
             return(Err.ErroGenerico())
