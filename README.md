@@ -20,7 +20,10 @@ O presente projeto tem como motivação o trabalho desenvolvido pelo LABin - Lab
 
 ### Requisitos
 
-. . .
+Dependencia | Versão
+---|---
+Numpy | 1.26.3
+Matplotlib | 3.8.2
 
 ### Forma de Instalação
 
@@ -52,3 +55,8 @@ O presente projeto tem como motivação o trabalho desenvolvido pelo LABin - Lab
 
 .
 ## Agradecimentos
+.
+
+.
+
+.
