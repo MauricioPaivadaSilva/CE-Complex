@@ -5,7 +5,11 @@
 
 
 ## Sobre a biblioteca
-A biblioteca consiste em um sistema que irá calcular e apresentar de forma gráfica ou numérica o resultado de operações matemáticas feitas utilizando o conjunto dos números complexos.
+A presente biblioteca interpreta dados inseridos em formato de coordenadas e de strings, e desta forma gera os gráficos para representar os dados inseridos.
+
+## Motivação
+
+O presente trabalho tem como motivação o trabalho gerado pelo LABin - Labratório de educação inclusiva, que tem como intuito o a pesquisa-ação
 
 ### Requisitos
 
@@ -18,19 +22,15 @@ A biblioteca consiste em um sistema que irá calcular e apresentar de forma grá
 ## Funcionalidades esperadas
 As funcionalidades esperadas consistem em:
 
-- [ ] Receber os valores que constituem um número complexo (em formato retanhular/trigonométrico);
+- [X] Receber os valores que constituem um número complexo (em formato retanhular/trigonométrico);
 - [ ] Receber os valores que constituem um número complexo (em formato polar);
 - [ ] Gerar ciclo trigonométrico esperado para representar os números complexos;
-- [ ] Gerar o gráfico de senoidal que representa uma função de onda de tensão elétrica.
+- [X] Gerar o gráfico de senoidal que representa uma função de onda de tensão elétrica.
 
 ## Resultados obtidos
-.
+Os graficos até entã gerados são de função senoidal, o que proporciona a capacidade de representar graficamente a tenção em AC (Corrente Alternada).
 
-.
-
-.
-
-## Comandos de útilização
+## Formas de utilização
 .
 
 .
