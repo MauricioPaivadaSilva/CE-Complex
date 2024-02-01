@@ -55,7 +55,16 @@ O presente projeto tem como motivação o trabalho desenvolvido pelo LABin - Lab
 - [ ] Fazer a animação do segundo gráfico.
 
 ## Resultados obtidos
-. . . 
+
+Para a validação dos das funcionalidades implementadas na lib, são realizados testes em que é validadas as mensagens de erro, pois é importante saber exatamente o que está acontecemdo com no programa em caso de erro. Assim como é realizados testes que validam pixel a pixel da imagem dos gráficos gerados, garantindo a integridade da lib.
+
+### Gráficos gerados
+
+<img src="img/origin_sin.png" alt="Gráfico de função senoidal" width="400"/>
+<img src="img/origin_vec_1.png" alt="Ciclo Trigonométrico com vetor imaginário" width="400"/>
+<img src="img/origin_vec_2.png" alt="Ciclo Trigonométrico com vetor imaginário" width="400"/>
+<img src="img/origin_vec_3.png" alt="Ciclo Trigonométrico com vetor imaginário" width="400"/>
+<img src="img/origin_vec_4.png" alt="Ciclo Trigonométrico com vetor imaginário" width="400"/>
 
 ## Formas de utilização
 
@@ -67,7 +76,7 @@ O presente projeto tem como motivação o trabalho desenvolvido pelo LABin - Lab
 
 |Comando | Dados a serem inseridos | Resumo da funcionalidade|
 |---|---|---|
-| `tr.Complex()` | Exemplo de valore: `"2+3i"` ou `"2+3j"`. Também pode ser inserido `"x"` ou `"y"`. Lembrando que todas os dados devem ser inseridos como _str_. | Direciona os dados para seu tratamento. Os dados podem ser interpretados como um vetor complexo, valor puramente real ou puramente imaginário. Ao inserir os dados como complexo ele retornará um [vetor](), já se for inserido _x_ ou _y_ retornará um gráfico [senoidal]().|
+| `tr.Complex(, None)` | Exemplo de valore: `"2+3i"` ou `"2+3j"`. Também pode ser inserido `"x"` ou `"y"`. Lembrando que todas os dados devem ser inseridos como _str_. | Direciona os dados para seu tratamento (**O parametro `None` deve ser mantido como segundo argumento, caso seja alterado, a lib irá trabalhar em modo de teste, gerando dados e salvando os mesmos**). Os dados podem ser interpretados como um vetor complexo, valor puramente real ou puramente imaginário. Ao inserir os dados como complexo ele retornará um **vetor**, já se for inserido _x_ ou _y_ retornará um gráfico **senoidal**.|
 </div>
 
 ## Agradecimentos
