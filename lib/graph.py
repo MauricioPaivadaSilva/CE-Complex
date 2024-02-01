@@ -5,6 +5,7 @@
 import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
 import numpy as np
+import os
 
 #
 #   Iniciando os a chamada dos plug-ins necessários.
@@ -34,7 +35,7 @@ class GraphCreate():
     def __init__(self):
         pass
 
-    def Calculate(num1, num2):  #   Calculando os valores do gráfico para todo x e todo y.
+    def Calculate(num1, num2, test):  #   Calculando os valores do gráfico para todo x e todo y.
         
         #   Chamada das variáveis globais
 
@@ -58,7 +59,7 @@ class GraphCreate():
             x.append(0)
             X.sort()
             ex = x+X
-            GraphCreate.ConvertInRad(num1, ex)
+            GraphCreate.ConvertInRad(num1, ex, test)
 
         elif((type(num1) == type("y")) and (num1 == "y")): #   Criação dos valores para y (como grau).
             a = 0
@@ -75,15 +76,21 @@ class GraphCreate():
             y.append(0)
             Y.sort()
             ey = y+Y
-            GraphCreate.ConvertInRad(num1, ey)
+            GraphCreate.ConvertInRad(num1, ey, test)
         
         elif((type(num1) == type(0.0)) and (type(num2) == type(0.0))): #   Verificando os valores para fazer a representação dos números complexos.
 
-            GraphCreate.Graphcreate(num1, num2)
+            GraphCreate.Graphcreate(num1, num2, test)
         else:
-            GraphCreate.Graphcreate(num1, num2)
+            # GraphCreate.Graphcreate(num1, num2, test)
+            return(Err.ErroGenerico())
+
+        x.clear()
+        X.clear()
+        y.clear()
+        Y.clear()
     
-    def ConvertInRad(num1, eq):   #   Conversão dos valores de grau em radianos.
+    def ConvertInRad(num1, eq, test):   #   Conversão dos valores de grau em radianos.
 
         #   Importação das variáveis globais.
 
@@ -93,9 +100,11 @@ class GraphCreate():
             r = (i*np.pi)/180
             rad.append(r)
         
-        GraphCreate.Graphcreate(num1, eq)
+        GraphCreate.Graphcreate(num1, eq, test)
         
-    def Graphcreate(num1, num2):    #   Criação do gráfico
+    def Graphcreate(num1, num2, test):    #   Criação do gráfico
+
+        plt.clf()
         
         #   Importação das variáveis globais
 
@@ -116,8 +125,8 @@ class GraphCreate():
                     sin.append(si)
             except:
                 pass
-            
-            plt.plot(num2, sin)
+
+            plt.plot(num2, sin, color="blue")
             plt.xlim(xlim_, xlim)
             plt.ylim(ylim_, ylim)
 
@@ -140,9 +149,16 @@ class GraphCreate():
                 arrowstyle='->'
             )
             plt.gca().add_patch(eixo_y)
-            plt.show()
+
+            if(test == True):
+                file = os.path.join('temp', 'test_comparar_grafico_sin.png')
+                plt.savefig(file)
+            else:
+                plt.show()
 
         elif((type(num1) == type(0.0)) and (type(num2) == type(0.0))):  #   Gerando o gráfico de vetor com números complexos
+
+            plt.clf()
             
             raio = 1
             theta = np.linspace(0, 2*np.pi, 100)
@@ -154,7 +170,7 @@ class GraphCreate():
             vec_x = num1/p
             vec_y = num2/p
 
-            plt.plot(x, y)
+            plt.plot(x, y, color='black')
             plt.quiver(
                 0, 
                 0, 
@@ -163,17 +179,19 @@ class GraphCreate():
                 angles='xy', 
                 scale_units='xy', 
                 scale=1, 
-                color='black'
+                color='black',
             )
 
-            # plt.plot([0, num1], [0, num2])
+            # Plota o ponto vermelho
+            plt.scatter(0, 0, color='red', label='Ponto Vermelho')
+            
             plt.xlim(-1.5, 1.5)
             plt.ylim(-1.5, 1.5)
 
-            #   Adicionando o eixo x.
+            #  Adicionando o eixo x.
             eixo_x = mpatches.FancyArrowPatch(
-                (( - 2), 0), 
-                (( + 2), 0), 
+                (( -1.5), 0), 
+                (( + 1.5), 0), 
                 color='black', 
                 mutation_scale=15, 
                 arrowstyle='->'
@@ -182,8 +200,8 @@ class GraphCreate():
 
             #   Adicionando o eixo y.
             eixo_y = mpatches.FancyArrowPatch(
-                (0, -2),
-                (0, 2),
+                (0, -1.5),
+                (0, 1.5),
                 color="black",
                 mutation_scale=15,
                 arrowstyle='->'
@@ -191,6 +209,13 @@ class GraphCreate():
             plt.gca().add_patch(eixo_y)
             plt.gca().set_aspect('equal', adjustable='box')
 
-            plt.show()
+            if(test == True):
+                file = os.path.join('temp', 'test_comparar_grafico_vec.png')
+                plt.savefig(file)
+            else:
+                plt.show()
         else:
             return(Err.ErroGenerico())
+
+        rad.clear()
+        sin.clear()
