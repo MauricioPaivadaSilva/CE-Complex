@@ -1,0 +1,43 @@
+#
+#   Chamando os arquivos das libs para teste
+#
+
+from ..router import Tratamento as rt
+from ..lib.graph import GraphCreate as GC
+
+##  Declarando as vaiáveis globais
+
+num1 = "5"
+num2 = "10"
+num3 = 5.0
+num4 = 10.0
+let = "a"
+
+##  Realizando teste das respostas de erro
+
+###   Teste para a resposta de valor inserido incorretamente
+
+def test_Valor_Inserido_Incorretamente_ROUTER():
+    result = rt.Complex(let, True)
+    esp = "\n      \033[1;31;40mERRO!\033[m \033[0;31;40mValor inserido de forma incorreta.\033[m\n"
+
+    assert result == esp, f"\n      \033[1;31;40mERRO!\033[m {result} != {esp}"
+
+###   Teste para a resposta de Erro genérico
+
+def test_Resposta_Generica_GRAPH_Calculate():
+    result = GC.Calculate(num3, let, True)
+    esp = "\n      \033[1;31;40mERRO!\033[m   \n"
+    assert result == esp, f"\n      \033[1;31;40mERRO!\033[m {result} != {esp}"
+
+def test_Resposta_Generica_GRAPH_GraphCreate():
+    result = GC.Graphcreate(num1, num2, True)
+    esp = "\n      \033[1;31;40mERRO!\033[m   \n"
+    assert result == esp, f"\n      \033[1;31;40mERRO!\033[m {result} != {esp}"
+
+###   Teste para a resposta de Erro genérico
+
+def test_Funcao_Nao_Implementada_GRAPH_Calculate():
+    result = GC.Calculate(num1, num2, True)
+    esp = "\n      \033[1;31;40mERRO!\033[m   \n"
+    assert result == esp, f"\n      \033[1;31;40mERRO!\033[m {result} != {esp}"
