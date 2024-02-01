@@ -22,6 +22,8 @@ O presente projeto tem como motivação o trabalho desenvolvido pelo LABin - Lab
 
 Dependencia | Versão
 ---|---
+Python | 3.12.0
+pip | 23.3.2
 Numpy | 1.26.3
 Matplotlib | 3.8.2
 
@@ -49,11 +51,11 @@ Matplotlib | 3.8.2
 . . . 
 
 ## Formas de utilização
-.
 
-.
+Comando | Dados a serem inseridos | Resumo da funcionalidade
+---|---|---
 
-.
+
 ## Agradecimentos
 .
 
