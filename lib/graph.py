@@ -80,10 +80,8 @@ class GraphCreate():
         elif((type(num1) == type(0.0)) and (type(num2) == type(0.0))): #   Verificando os valores para fazer a representação dos números complexos.
 
             GraphCreate.Graphcreate(num1, num2)
-
-            # return(Err.FuncaoNaoImplementada())
         else:
-            return(Err.ErroGenerico())
+            GraphCreate.Graphcreate(num1, num2)
     
     def ConvertInRad(num1, eq):   #   Conversão dos valores de grau em radianos.
 

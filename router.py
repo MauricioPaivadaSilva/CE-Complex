@@ -56,6 +56,6 @@ class Tratamento:
             else:
                 try:
                     real = float(complexo)
-                    return(GC.Calculate(real, 0))
+                    return(GC.Calculate(real, 0.0))
                 except ValueError:
                     return(Err.ValorInseridoIncorretamente())
