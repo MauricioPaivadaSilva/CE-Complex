@@ -31,6 +31,7 @@ O presente projeto tem como motivação o trabalho desenvolvido pelo LABin - Lab
 |pip | 23.3.2|
 |Numpy | 1.26.3|
 |Matplotlib | 3.8.2|
+|Pytest | 8.0.0|
 
 </div>
 
