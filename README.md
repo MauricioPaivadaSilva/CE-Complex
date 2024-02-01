@@ -1,7 +1,9 @@
-# Biblioteca CE-Complex
+<div align="center">
+<h1>MCEpy</h1>
 
 ![GitHub top language](https://img.shields.io/github/languages/top/MauricioPaivadaSilva/CE-Complex) ![GitHub language count](https://img.shields.io/github/languages/count/MauricioPaivadaSilva/CE-Complex) ![GitHub License](https://img.shields.io/github/license/MauricioPaivadaSilva/CE-Complex) ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/MauricioPaivadaSilva/CE-Complex/main) ![GitHub repo size](https://img.shields.io/github/repo-size/MauricioPaivadaSilva/CE-Complex)
 
+</div>
 
 ## Sobre a biblioteca
 A presente biblioteca interpreta dados inseridos em formato de coordenadas e de strings, e desta forma gera os gráficos para representar os dados inseridos.
@@ -18,20 +20,25 @@ O presente projeto tem como motivação o trabalho desenvolvido pelo LABin - Lab
 * [Agradecimentos](#agradecimentos)
 ## Requisitos e forma de instalação
 
-### Requisitos
 
-Dependencia | Versão
----|---
-Python | 3.12.0
-pip | 23.3.2
-Numpy | 1.26.3
-Matplotlib | 3.8.2
+### Requisitos
+<div align="center">
+
+|Dependencia | Versão|
+|---|---|
+|Python | 3.12.0|
+|pip | 23.3.2|
+|Numpy | 1.26.3|
+|Matplotlib | 3.8.2|
+
+</div>
 
 ### Forma de Instalação
 
 * Para instalar usando o setup.py: 
 
 `pip install .`
+
 * Para instalar usando o requirements.txt:
 
 `pip install -r requirements.txt`
@@ -51,10 +58,12 @@ Matplotlib | 3.8.2
 . . . 
 
 ## Formas de utilização
+<div align="center">
 
-Comando | Dados a serem inseridos | Resumo da funcionalidade
----|---|---
+|Comando | Dados a serem inseridos | Resumo da funcionalidade|
+|---|---|---|
 
+</div>
 
 ## Agradecimentos
 .
