@@ -1,7 +1,7 @@
 <div align="center">
 <h1>MCEpy</h1>
 
-![GitHub top language](https://img.shields.io/github/languages/top/MauricioPaivadaSilva/CE-Complex) ![GitHub language count](https://img.shields.io/github/languages/count/MauricioPaivadaSilva/CE-Complex) ![GitHub License](https://img.shields.io/github/license/MauricioPaivadaSilva/CE-Complex) ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/MauricioPaivadaSilva/CE-Complex/main) ![GitHub repo size](https://img.shields.io/github/repo-size/MauricioPaivadaSilva/CE-Complex)
+![GitHub top language](https://img.shields.io/github/languages/top/MauricioPaivadaSilva/MCEpy) ![GitHub language count](https://img.shields.io/github/languages/count/MauricioPaivadaSilva/MCEpy) ![GitHub License](https://img.shields.io/github/license/MauricioPaivadaSilva/MCEpy) ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/MauricioPaivadaSilva/MCEpy/main) ![GitHub repo size](https://img.shields.io/github/repo-size/MauricioPaivadaSilva/MCEpy)
 
 </div>
 
