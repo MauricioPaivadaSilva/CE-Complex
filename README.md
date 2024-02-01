@@ -58,11 +58,16 @@ O presente projeto tem como motivação o trabalho desenvolvido pelo LABin - Lab
 . . . 
 
 ## Formas de utilização
+
+* Chmada da lib:
+
+`from MCEpy import Tratamento as tr`
+
 <div align="center">
 
 |Comando | Dados a serem inseridos | Resumo da funcionalidade|
 |---|---|---|
-
+| `tr.Complex()` | Exemplo de valore: `"2+3i"` ou `"2+3j"`. Também pode ser inserido `"x"` ou `"y"`. Lembrando que todas os dados devem ser inseridos como _str_. | Direciona os dados para seu tratamento. Os dados podem ser interpretados como um vetor complexo, valor puramente real ou puramente imaginário. Ao inserir os dados como complexo ele retornará um [vetor](), já se for inserido _x_ ou _y_ retornará um gráfico [senoidal]().
 </div>
 
 ## Agradecimentos
