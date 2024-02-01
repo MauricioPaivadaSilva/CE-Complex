@@ -52,7 +52,7 @@ class Tratamento:
                 return(GC.Calculate(R, Im))
         else:
             if(complexo == "x" or complexo == "y"):
-                GC.Calculate(complexo)
+                GC.Calculate(complexo, 0)
             else:
                 try:
                     real = float(complexo)
