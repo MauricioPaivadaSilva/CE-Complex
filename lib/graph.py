@@ -10,7 +10,7 @@ import numpy as np
 #   Iniciando os a chamada dos plug-ins necessários.
 #
 
-from lib.err import Err as Err
+from .err import Err as Err
 
 ##  Criação de variáveis globais
 
