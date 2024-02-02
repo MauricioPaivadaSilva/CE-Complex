@@ -6,9 +6,6 @@
 
 </div>
 
-## Sobre a biblioteca
-A presente biblioteca aprensenta-se em sua *versão 0.0.2* e tem como foco interpretar dados inseridos em formato de coordenadas e de strings, e desta forma gera os gráficos para representar os dados inseridos.
-
 ### Resultados dos testes
 
 *Há divergência nos resultados do teste com Pytest, pois em máquina real o resultado é de que passou em 100% dos testes, mas pelos testes do GitHub Actions ele falha. O resultado falho pode ser devido ao pytest analizar imagens que são geradas, ou por algum erro ao configurar os testes pelo GitHub Actions.*
@@ -20,6 +17,9 @@ A presente biblioteca aprensenta-se em sua *versão 0.0.2* e tem como foco inter
 | Pytest | [![Tests](https://github.com/MauricioPaivadaSilva/MCEpy/workflows/Run%20Tests/badge.svg)](https://github.com/MauricioPaivadaSilva/MCEpy/actions) |
 
 </div>
+
+## Sobre a biblioteca
+A presente biblioteca aprensenta-se em sua *versão 0.2.0* e tem como foco interpretar dados inseridos em formato de coordenadas e de strings, e desta forma gera os gráficos para representar os dados inseridos.
 
 ## Motivação
 
@@ -66,7 +66,7 @@ O presente projeto tem como motivação o trabalho desenvolvido pelo LABin - Lab
 - [x] Gerar o vetor dentro do ciclo trigonométrico;
 - [ ] Apresentar mais de um gráfico em uma única tela;
 - [ ] Fazer a animação do ciclo trigonométrico;
-- [ ] Fazer a animação do segundo gráfico.
+- [ ] Fazer a animação do gráfico da função senoidal.
 
 ## Resultados obtidos
 
