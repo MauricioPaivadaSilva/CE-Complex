@@ -60,7 +60,6 @@ class Animate:
         plt.clf()
 
         num1 = float(frequencia[:-2])
-        # ylim_sin = num1
 
         a = 0
         b = 0
@@ -86,9 +85,9 @@ class Animate:
             r = (i*np.pi)/180
             rad.append(r)
         
-        Animate.animmate(num1, eq, test)
+        Animate.animmate_sin(num1, eq, test)
 
-    def animmate(num1, num2, test):
+    def animmate_sin(num1, num2, test):
 
         sin = []
 
@@ -102,15 +101,16 @@ class Animate:
         except:
             pass
 
-        while temp <= 60:
+        while temp <= 60.0:
 
             plt.cla()
             plt.clf()
 
             plt.plot(num2, sin, color="blue")
-            plt.plot([0, temp], [0, 0], color="red")
+            plt.plot([0, temp], [0, 0], color="red", lw=2)
             plt.xlim(xlim_sin_, xlim_sin)
             plt.ylim(ylim_sin_, ylim_sin)
+            plt.xlabel('s (segundos)')
 
             #   Adicionando o eixo x.
             eixo_x = mpatches.FancyArrowPatch(
@@ -119,7 +119,6 @@ class Animate:
                 color='black', 
                 mutation_scale=15, 
                 arrowstyle='->',
-                label='t'
             )
             plt.gca().add_patch(eixo_x)
 
@@ -133,10 +132,16 @@ class Animate:
             )
             plt.gca().add_patch(eixo_y)
 
-            temp += 1
-            plt.pause(1)
+            temp += 0.1
+            plt.pause(0.05)
         
         plt.ioff()
 
-        # plt.show()
+        plt.show()
+
+        print(temp)
+
         sin.clear()
+
+if __name__ == "__main__":
+    Animate("60Hz", None)
