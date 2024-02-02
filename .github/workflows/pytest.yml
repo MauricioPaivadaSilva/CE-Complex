@@ -26,6 +26,11 @@ jobs:
     - name: Atualizar setuptools
       run: |
         python -m pip install --upgrade setuptools
+    - name: Instalar ferramentas de desenvolvimento do Python
+      run: |
+        python -m pip install --upgrade pip
+        python -m pip install wheel
+        python -m pip install setuptools      
     - name: Instalar distutils
       run: |
         python -m pip install distutils
