@@ -2,12 +2,24 @@
 
 # MCEpy
 
-![GitHub top language](https://img.shields.io/github/languages/top/MauricioPaivadaSilva/MCEpy) ![GitHub language count](https://img.shields.io/github/languages/count/MauricioPaivadaSilva/MCEpy) ![GitHub License](https://img.shields.io/github/license/MauricioPaivadaSilva/MCEpy) ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/MauricioPaivadaSilva/MCEpy/main) ![GitHub repo size](https://img.shields.io/github/repo-size/MauricioPaivadaSilva/MCEpy) [![Tests](https://github.com/MauricioPaivadaSilva/MCEpy/workflows/Run%20Tests/badge.svg)](https://github.com/MauricioPaivadaSilva/MCEpy/actions)
+![GitHub top language](https://img.shields.io/github/languages/top/MauricioPaivadaSilva/MCEpy) ![GitHub language count](https://img.shields.io/github/languages/count/MauricioPaivadaSilva/MCEpy) ![GitHub License](https://img.shields.io/github/license/MauricioPaivadaSilva/MCEpy) ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/MauricioPaivadaSilva/MCEpy/main) ![GitHub repo size](https://img.shields.io/github/repo-size/MauricioPaivadaSilva/MCEpy)
 
 </div>
 
 ## Sobre a biblioteca
 A presente biblioteca aprensenta-se em sua *versão 0.0.2* e tem como foco interpretar dados inseridos em formato de coordenadas e de strings, e desta forma gera os gráficos para representar os dados inseridos.
+
+### Resultados dos testes
+
+*Há divergência nos resultados do teste com Pytest, pois na máquina de desenvolvimento o resultado é de que passou em 100% dos testes, mas pelos testes do GitHub ele falha. O resultado falho pode ser devido ao pytest analizar imagens que são geradas, ou por algum erro ao configurar os testes pelo GitHub.*
+
+<div align="center">
+
+| Tipo do teste | Resultado |
+|---|---|
+| Pytest | [![Tests](https://github.com/MauricioPaivadaSilva/MCEpy/workflows/Run%20Tests/badge.svg)](https://github.com/MauricioPaivadaSilva/MCEpy/actions) |
+
+</div>
 
 ## Motivação
 
@@ -62,10 +74,24 @@ Para a validação dos das funcionalidades implementadas na lib, são realizados
 
 ### Gráficos gerados
 
+* Gráfico de função senoidal
+
 <img src="img/origin_sin.png" alt="Gráfico de função senoidal" width="400"/>
+
+* Ciclo Trigonométrico com vetor imaginário 2+2j
+
 <img src="img/origin_vec_1.png" alt="Ciclo Trigonométrico com vetor imaginário" width="400"/>
+
+* Ciclo Trigonométrico com vetor imaginário -2-2j
+
 <img src="img/origin_vec_2.png" alt="Ciclo Trigonométrico com vetor imaginário" width="400"/>
-<img src="img/origin_vec_3.png" alt="Ciclo Trigonométrico com vetor imaginário" width="400"/>
+
+* Ciclo Trigonométrico com vetor real 5
+
+<img src="img/origin_vec_3.png" alt="Ciclo Trigonométrico com vetor real" width="400"/>
+
+* Ciclo Trigonométrico com vetor imaginário 10i
+
 <img src="img/origin_vec_4.png" alt="Ciclo Trigonométrico com vetor imaginário" width="400"/>
 
 ## Formas de utilização
