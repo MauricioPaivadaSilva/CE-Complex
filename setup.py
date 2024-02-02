@@ -14,7 +14,8 @@ setup(
     install_requires=[
         'numpy==1.26.3',
         'matplotlib==3.8.2',
-        "pytest==8.0.0",
+        'pytest==8.0.0',
+        'Pyllow==10.1.0',
     ],
     packages=['MCEpy'],
     keywords=[
