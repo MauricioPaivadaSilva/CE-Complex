@@ -11,7 +11,7 @@ A presente biblioteca aprensenta-se em sua *versão 0.0.2* e tem como foco inter
 
 ### Resultados dos testes
 
-*Há divergência nos resultados do teste com Pytest, pois na máquina de desenvolvimento o resultado é de que passou em 100% dos testes, mas pelos testes do GitHub ele falha. O resultado falho pode ser devido ao pytest analizar imagens que são geradas, ou por algum erro ao configurar os testes pelo GitHub.*
+*Há divergência nos resultados do teste com Pytest, pois em máquina real o resultado é de que passou em 100% dos testes, mas pelos testes do GitHub Actions ele falha. O resultado falho pode ser devido ao pytest analizar imagens que são geradas, ou por algum erro ao configurar os testes pelo GitHub Actions.*
 
 <div align="center">
 
@@ -104,7 +104,7 @@ Para a validação dos das funcionalidades implementadas na lib, são realizados
 
 |Comando | Dados a serem inseridos | Resumo da funcionalidade|
 |---|---|---|
-| `tr.Complex(, None)` | Exemplo de valore: `"2+3i"` ou `"2+3j"`. Também pode ser inserido `"x"` ou `"y"`. Lembrando que todas os dados devem ser inseridos como _str_. | Direciona os dados para seu tratamento (**O parametro `None` deve ser mantido como segundo argumento, caso seja alterado, a lib irá trabalhar em modo de teste, gerando dados e salvando os mesmos**). Os dados podem ser interpretados como um vetor complexo, valor puramente real ou puramente imaginário. Ao inserir os dados como complexo ele retornará um **vetor**, já se for inserido _x_ ou _y_ retornará um gráfico **senoidal**.|
+| `tr.Complex(, None)` | Exemplo de valore: `"2+3i"` ou `"-2-3j"`. Também pode ser inserido `"x"` ou `"y"`. Lembrando que todas os dados devem ser inseridos como _str_. | Direciona os dados para seu tratamento (**O parametro `None` deve ser mantido como segundo argumento, caso seja alterado, a lib irá trabalhar em modo de teste, gerando dados e salvando os mesmos**). Os dados podem ser interpretados como um vetor complexo, valor puramente real ou puramente imaginário. Ao inserir os dados como complexo ele retornará um **vetor**, já se for inserido _x_ ou _y_ retornará um gráfico **senoidal**.|
 </div>
 
 ## Agradecimentos
