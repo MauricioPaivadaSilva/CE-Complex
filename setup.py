@@ -12,10 +12,10 @@ setup(
     author="Maurício Paiva da Silva",
     license="MIT Licence",
     install_requires=[
-        'numpy==1.26.3',
-        'matplotlib==3.8.2',
+        'numpy==1.22.0',
+        'matplotlib==3.4.3',
         'pytest==8.0.0',
-        'Pyllow==10.1.0',
+        'Pillow==10.1.0',
     ],
     packages=['MCEpy'],
     keywords=[
