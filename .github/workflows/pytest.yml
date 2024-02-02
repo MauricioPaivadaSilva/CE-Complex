@@ -23,9 +23,6 @@ jobs:
       uses: actions/setup-python@v5
       with:
         python-version: "3.12"
-    - name: Atualizar setuptools
-      run: |
-        python -m pip install --upgrade setuptools
     - name: Instalar ferramentas de desenvolvimento do Python
       run: |
         python -m pip install --upgrade pip
