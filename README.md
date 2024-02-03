@@ -65,8 +65,8 @@ O presente projeto tem como motivação o trabalho desenvolvido pelo LABin - Lab
 - [x] Gerar o ciclo trigonométrico;
 - [x] Gerar o vetor dentro do ciclo trigonométrico;
 - [ ] Apresentar mais de um gráfico em uma única tela;
-- [ ] Fazer a animação do ciclo trigonométrico;
-- [ ] Fazer a animação do gráfico da função senoidal.
+- [x] Fazer a animação do ciclo trigonométrico;
+- [x] Fazer a animação do gráfico da função senoidal.
 
 ## Resultados obtidos
 
