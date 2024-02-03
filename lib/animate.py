@@ -59,7 +59,12 @@ class Animate:
         plt.cla()
         plt.clf()
 
-        num1 = float(frequencia[:-2])
+        if(frequencia != 0.0):
+            num1 = frequencia
+            xlim_sin = num1 + 2
+        else:
+            num1 = 60.0
+            xlim_sin = num1 + 2
 
         a = 0
         b = 0
@@ -68,7 +73,7 @@ class Animate:
         while i:
             b += 1
             Y.append(b)
-            if(b == 60):
+            if(b == num1):
                 i = False
         Y.sort()
         ey = Y
@@ -139,9 +144,6 @@ class Animate:
 
         plt.show()
 
-        print(temp)
+        # print(temp)   #   Condição para leitura de dados
 
         sin.clear()
-
-if __name__ == "__main__":
-    Animate("60Hz", None)
