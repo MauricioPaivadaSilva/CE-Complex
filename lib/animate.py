@@ -38,7 +38,7 @@ ylim_sin_ = -ylim_cic
 ##########################################
 
 class Animate:
-    def __init__(self, frequencia, test):
+    def __init__(self, frequencia, tipo, test):
         global x
         global X
         global y
@@ -78,7 +78,10 @@ class Animate:
         Y.sort()
         ey = Y
 
-        Animate.ConvertInRad(num1, ey, test)
+        if(tipo == "sin"):
+            Animate.ConvertInRad(num1, ey, test)
+        else:
+            Animate.animmate_cic(test)
     
     def ConvertInRad(num1, eq, test):   #   Conversão dos valores de grau em radianos.
 
@@ -147,3 +150,83 @@ class Animate:
         # print(temp)   #   Condição para leitura de dados
 
         sin.clear()
+    
+    def animmate_cic(test):
+
+        plt.ion()
+        temp = 0
+        num1 = 10
+        num2 = 0
+
+        while temp <= 60.1:
+            plt.cla()
+            plt.clf()
+
+            raio = 1
+            theta = np.linspace(0, 2*np.pi, 100)
+            x = raio*np.cos(theta)
+            y = raio*np.sin(theta)
+            p = np.sqrt((num1**2)+(num2**2))
+
+            
+            vec_x = num1/p
+            vec_y = num2/p
+
+            if(((num1 > 0) and (num1 < 11)) and (num2 >= 0)):
+                num1 -= 1
+                num2 += 1
+            elif(((num1 <= 0) and (num1 > -11)) and (num2 > 0)):
+                num1 -= 1
+                num2 -= 1
+            elif(((num1 < 0) and (num1 >= -10))):
+                num1 += 1
+                num2 -= 1
+            elif(((num1 >= 0) and (num1 < 11)) and (num2 > -11)):
+                num1 += 1
+                num2 += 1
+
+            plt.plot(x, y, color='black')
+            plt.quiver(
+                0, 
+                0, 
+                vec_x, 
+                vec_y, 
+                angles='xy', 
+                scale_units='xy', 
+                scale=1, 
+                color='black',
+            )
+
+            # Plota o ponto vermelho
+            plt.scatter(0, 0, color='red', label='Ponto Vermelho')
+            
+            plt.xlim(-1.5, 1.5)
+            plt.ylim(-1.5, 1.5)
+
+            #  Adicionando o eixo x.
+            eixo_x = mpatches.FancyArrowPatch(
+                (( -1.5), 0), 
+                (( + 1.5), 0), 
+                color='black', 
+                mutation_scale=15, 
+                arrowstyle='->'
+            )
+            plt.gca().add_patch(eixo_x)
+
+            #   Adicionando o eixo y.
+            eixo_y = mpatches.FancyArrowPatch(
+                (0, -1.5),
+                (0, 1.5),
+                color="black",
+                mutation_scale=15,
+                arrowstyle='->'
+            )
+            plt.gca().add_patch(eixo_y)
+            plt.gca().set_aspect('equal', adjustable='box')
+
+            temp += 0.1
+            plt.pause(0.05)
+
+        plt.ioff()
+
+        plt.show()
