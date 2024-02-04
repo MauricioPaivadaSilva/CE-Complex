@@ -74,23 +74,23 @@ Para a validação dos das funcionalidades implementadas na lib, são realizados
 
 ### Gráficos gerados
 
-* Gráfico de função senoidal
+1. Gráfico de função senoidal
 
 <img src="img/origin_sin.png" alt="Gráfico de função senoidal" width="400"/>
 
-* Ciclo Trigonométrico com vetor imaginário 2+2j
+2. Ciclo Trigonométrico com vetor imaginário 2+2j
 
 <img src="img/origin_vec_1.png" alt="Ciclo Trigonométrico com vetor imaginário" width="400"/>
 
-* Ciclo Trigonométrico com vetor imaginário -2-2j
+3. Ciclo Trigonométrico com vetor imaginário -2-2j
 
 <img src="img/origin_vec_2.png" alt="Ciclo Trigonométrico com vetor imaginário" width="400"/>
 
-* Ciclo Trigonométrico com vetor real 5
+4. Ciclo Trigonométrico com vetor real 5
 
 <img src="img/origin_vec_3.png" alt="Ciclo Trigonométrico com vetor real" width="400"/>
 
-* Ciclo Trigonométrico com vetor imaginário 10i
+5. Ciclo Trigonométrico com vetor imaginário 10i
 
 <img src="img/origin_vec_4.png" alt="Ciclo Trigonométrico com vetor imaginário" width="400"/>
 
@@ -106,8 +106,8 @@ Pode ser atribuido como valor imaginário tanto _i_ como _j_. E no caso dos grá
 
 <div align="center">
 
-|Exemplo de comando | Resumo da funcionalidade|
-|---|---|---|
+|Exemplos de comandos que podem ser utilizados | Resumo da funcionalidade|
+|---|---|
 | `tr.Complex("x", None)` | Irá gerar um gráfico senoidal estático. |
 | `tr.Complex("y", None)` | Irá gerar um gráfico senoidal estático. |
 | `tr.Complex("5", None)` | Irá gerar um gráfico do ciclo trigonométrico estático, com vetor puramente real. |
