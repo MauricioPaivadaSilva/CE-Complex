@@ -27,7 +27,7 @@ class Animate:
 
     ##   Definição de configurações dos gráfcos que são plotados
     
-    def setup_plots(self, frequencia):
+    def setup_plots(self):
 
         ### Gráfico da função senoide
 
@@ -43,7 +43,7 @@ class Animate:
             color="red", 
             lw=2
         )
-        self.gf1.set_xlim(0, (frequencia + 2))
+        self.gf1.set_xlim(0, (self.frequencia + 2))
         self.gf1.set_ylim(-1.2, 1.2)
         self.gf1.set_xlabel('t (segundos)')
         self.gf1.set_yticks([-1, 0, 1])
@@ -51,7 +51,7 @@ class Animate:
 
         eixo_x = mpatches.FancyArrowPatch(
             (0, 0),
-            ((frequencia + 2), 0),
+            ((self.frequencia + 2), 0),
             color='black',
             mutation_scale=15,
             arrowstyle='->'
@@ -133,5 +133,31 @@ class Animate:
                 a += 1
                 b += 1
             
-            self.update_plots(time, sin, a, b)
+            self.update(time, sin, a, b)
             plt.pause(0.05)
+        
+        plt.show()
+
+    ##  Função que atualiza os gráficos
+    
+    def update(self, time, sin, a, b):
+
+        ### Atualiza o gráfico senoidal
+
+        self.sin_line.set_data(time, sin)
+        self.time_line.set_data([0, time[-1]], [0, 0])
+
+        ### Atualiza o gráfico da função trigonométrica
+
+        theta = np.linspace(0, 2* np.pi, 100)
+        x = np.cos(theta)
+        y = np.sin(theta)
+        p = np.sqrt((a**2) + (b**2))
+
+        vec_x = a/p
+        vec_y = b/p
+
+        self.circle.set_data(x, y)
+        self.quiver.set_UVC(vec_x, vec_y)
+
+        plt.tight_layout()
