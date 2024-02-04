@@ -71,6 +71,7 @@ class Animate:
             0,
             0,
             angles='xy',
+            scale_units='xy',
             scale=1,
             color='black'
         )
