@@ -100,3 +100,38 @@ class Animate:
         )
         self.gf2.add_patch(eixo_y_cic)
         self.gf2.set_aspect('equal', adjustable='box')
+
+    ##   Função de animação dos gráficos
+
+    def animate(self):
+
+        sin = []
+        time = []
+
+        a, b = 10, 0
+
+        for i in range(0, 600):
+            t = i / 10.0
+            sin.append(np.sin(t * (self.frequencia)))
+            time.append(t)
+
+            ####    Lógica de funcionamento da animação do ciclo trigonométrico
+            ####
+            ####    !!!NÃO APAGAR!!!
+            ####
+
+            if(((a > 0) and (a < 11)) and (b >= 0)):
+                a -= 1
+                b += 1
+            elif(((a <= 0) and (a > -11)) and (b > 0)):
+                a -= 1
+                b -= 1
+            elif(((a < 0) and (a >= -10))):
+                a += 1
+                b -= 1
+            elif(((a >= 0) and (a < 11)) and (b > -11)):
+                a += 1
+                b += 1
+            
+            self.update_plots(time, sin, a, b)
+            plt.pause(0.05)
