@@ -22,7 +22,7 @@ class Animate:
         self.gf2 = gf2
         self.frequencia = frequencia
 
-        self.setup_plots(frequencia)
+        self.setup_plots()
         self.animate()
 
     ##   Definição de configurações dos gráfcos que são plotados
