@@ -43,7 +43,7 @@ class Animate:
             color="red", 
             lw=2
         )
-        self.gf1.set_xlim(0, (self.frequencia + 2))
+        self.gf1.set_xlim(0, 61)
         self.gf1.set_ylim(-1.2, 1.2)
         self.gf1.set_xlabel('t (segundos)')
         self.gf1.set_yticks([-1, 0, 1])
@@ -51,7 +51,7 @@ class Animate:
 
         eixo_x = mpatches.FancyArrowPatch(
             (0, 0),
-            ((self.frequencia + 2), 0),
+            (61, 0),
             color='black',
             mutation_scale=15,
             arrowstyle='->'
