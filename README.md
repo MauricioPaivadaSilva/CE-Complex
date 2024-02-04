@@ -64,7 +64,7 @@ O presente projeto tem como motivação o trabalho desenvolvido pelo LABin - Lab
 - [x] Gerar o gráfico de função senoidal;
 - [x] Gerar o ciclo trigonométrico;
 - [x] Gerar o vetor dentro do ciclo trigonométrico;
-- [ ] Apresentar mais de um gráfico em uma única tela;
+- [x] Apresentar mais de um gráfico em uma única tela;
 - [x] Fazer a animação do ciclo trigonométrico;
 - [x] Fazer a animação do gráfico da função senoidal.
 
@@ -100,11 +100,22 @@ Para a validação dos das funcionalidades implementadas na lib, são realizados
 
 `from MCEpy import Tratamento as tr`
 
+Lembrando que **todos** os dados devem ser inseridos como _str_. Assim como o parametro `None` **deve** ser mantido como segundo argumento, caso seja alterado, a lib irá trabalhar em modo de teste, gerando dados e salvando os mesmos.
+
+Pode ser atribuido como valor imaginário tanto _i_ como _j_. E no caso dos gráficos animados, é necessário inserir _Hz_ após o valor, como no exemplo.
+
 <div align="center">
 
-|Comando | Dados a serem inseridos | Resumo da funcionalidade|
+|Exemplo de comando | Resumo da funcionalidade|
 |---|---|---|
-| `tr.Complex(, None)` | Exemplo de valore: `"2+3i"` ou `"-2-3j"`. Também pode ser inserido `"x"` ou `"y"`. Lembrando que todas os dados devem ser inseridos como _str_. | Direciona os dados para seu tratamento (**O parametro `None` deve ser mantido como segundo argumento, caso seja alterado, a lib irá trabalhar em modo de teste, gerando dados e salvando os mesmos**). Os dados podem ser interpretados como um vetor complexo, valor puramente real ou puramente imaginário. Ao inserir os dados como complexo ele retornará um **vetor**, já se for inserido _x_ ou _y_ retornará um gráfico **senoidal**.|
+| `tr.Complex("x", None)` | Irá gerar um gráfico senoidal estático. |
+| `tr.Complex("y", None)` | Irá gerar um gráfico senoidal estático. |
+| `tr.Complex("5", None)` | Irá gerar um gráfico do ciclo trigonométrico estático, com vetor puramente real. |
+| `tr.Complex("10i", None)` | Irá gerar um gráfico do ciclo trigonométrico estático, com vetor puramente imaginário. |
+| `tr.Complex("2+3i", None)` | Irá gerar um gráfico do ciclo trigonométrico estático em que há o vetor qe indica a representação gráfica do número complexo. No caso, o vetor direcionará para o primeio quadrante.|
+| `tr.Complex("-2-3i", None)`| Irá gerar um gráfico do ciclo trigonométrico estático em que há o vetor qe indica a representação gráfica do número complexo. No caso, o vetor direcionará para o terceiro quadrante. |
+| `tr.Complex("60Hz", None)`| Ira gerar os gráficos animados que se adaptarão confome a frequência inserida. |
+
 </div>
 
 ## Agradecimentos
