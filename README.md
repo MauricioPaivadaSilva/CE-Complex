@@ -19,7 +19,7 @@
 </div>
 
 ## Sobre a biblioteca
-A presente biblioteca aprensenta-se em sua *versão 0.3.4* e tem como foco interpretar dados inseridos em formato de coordenadas e de strings, e desta forma gera os gráficos para representar os dados inseridos.
+A presente biblioteca aprensenta-se em sua *versão 0.3.5* e tem como foco interpretar dados inseridos em formato de coordenadas e de strings, e desta forma gera os gráficos para representar os dados inseridos.
 
 ## Motivação
 

@@ -8,7 +8,7 @@ setup(
     long_description=readme,
     long_description_content_type="text/markdown",
     description="Biblioteca para interpretação e criação de dados e gáficos, com o objetivo de trabalhar com números complexos e circuitos elétricos",
-    version="0.3.4",
+    version="0.3.5",
     author="Maurício Paiva da Silva",
     license="MIT Licence",
     install_requires=[
