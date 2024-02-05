@@ -73,7 +73,7 @@ class Animate:
             angles='xy',
             scale_units='xy',
             scale=1,
-            color='black'
+            color='blue'
         )
         self.gf2.scatter(
             0,
@@ -81,7 +81,11 @@ class Animate:
             color='red'
         )
         self.gf2.set_xlim(-1.2, 1.2)
+        self.gf2.set_xticks([-1, 0, 1])
+        self.gf2.set_xticklabels(['-1', '0', '1'])
         self.gf2.set_ylim(-1.2, 1.2)
+        self.gf2.set_yticks([-1, 0, 1])
+        self.gf2.set_yticklabels(['-i', '0', 'i'])
 
         eixo_x_cic = mpatches.FancyArrowPatch(
             (-1.2, 0),
@@ -109,9 +113,9 @@ class Animate:
         sin = []
         time = []
 
-        a, b = 10, 0
-
         periodo = 1 / self.frequencia
+
+        a, b = ((150 / (self.frequencia))), 0
 
         for i in range(0, 600):
             t = i / 10.0
@@ -124,21 +128,24 @@ class Animate:
             ####    !!!NÃO APAGAR!!!
             ####
 
-            if(((a > 0) and (a < 11)) and (b >= 0)):
+            cic_lim = ((150)/(self.frequencia))
+            cic_lim_ = -1 * ((150 / (self.frequencia)))
+
+            if(((a > 0) and (a < (cic_lim + 1))) and (b >= 0)):
                 a -= 1
                 b += 1
-            elif(((a <= 0) and (a > -11)) and (b > 0)):
+            elif(((a <= 0) and (a > (cic_lim_ - 1))) and (b > 0)):
                 a -= 1
                 b -= 1
-            elif(((a < 0) and (a >= -10))):
+            elif(((a < 0) and (a >= cic_lim_))):
                 a += 1
                 b -= 1
-            elif(((a >= 0) and (a < 11)) and (b > -11)):
+            elif(((a >= 0) and (a < (cic_lim + 1))) and (b > (cic_lim_ - 1))):
                 a += 1
                 b += 1
             
             self.update(time, sin, a, b)
-            plt.pause(1 / 27) # Taxa de atualização = 27 Hz
+            plt.pause(1 / 60) # Taxa de atualização = 60 Hz
         
         plt.show()
 

@@ -71,7 +71,7 @@ class Tratamento:
             elif("Hz" in complexo):
                 frequencia = complexo[:-2]
                 frequencia = float(frequencia)
-                fig, (gf1, gf2) = plt.subplots(
+                fig, (gf2, gf1) = plt.subplots(
                     nrows=2, 
                     ncols=1, 
                     figsize=(8, 6)
