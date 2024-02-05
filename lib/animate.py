@@ -111,9 +111,12 @@ class Animate:
 
         a, b = 10, 0
 
+        periodo = 1 / self.frequencia
+
         for i in range(0, 600):
             t = i / 10.0
-            sin.append(np.sin(t * (self.frequencia)))
+            r = (np.pi * t)/180
+            sin.append(np.sin(2 * np.pi * (r/periodo)))
             time.append(t)
 
             ####    Lógica de funcionamento da animação do ciclo trigonométrico
@@ -135,7 +138,7 @@ class Animate:
                 b += 1
             
             self.update(time, sin, a, b)
-            plt.pause(0.05)
+            plt.pause(1 / 27) # Taxa de atualização = 27 Hz
         
         plt.show()
 
