@@ -7,5 +7,16 @@ jobs:
         runs-on: ubuntu-latest
 
         steps:
-            - name: Teste de comando!
-              run: echo $(pwd)
+            - name: Copiando o repositório
+              uses: actions/checkout@v4
+              with:
+                ref: main
+
+            - name: Instalando o Python e pip
+              uses: actions/setup-python@v5
+              with:
+                python-version: '3.12'
+                cache: 'pip'
+
+            - name: Instalação das dependências
+              run: pip install .
