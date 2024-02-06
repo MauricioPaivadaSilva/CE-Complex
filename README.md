@@ -8,8 +8,6 @@
 
 ### Resultados dos testes
 
-*Há divergência nos resultados do teste com Pytest, pois em máquina real o resultado é de que passou em 100% dos testes, mas pelos testes do GitHub Actions ele falha. O resultado falho pode ser devido ao pytest analizar imagens que são geradas, ou por algum erro ao configurar os testes pelo GitHub Actions.*
-
 <div align="center">
 
 | Tipo do teste | Resultado |
