@@ -22,4 +22,4 @@ jobs:
                 cache: 'pip'
 
             - name: Instalação das dependências
-              run: pip install .
+              run: pip install -r requirements.txt
