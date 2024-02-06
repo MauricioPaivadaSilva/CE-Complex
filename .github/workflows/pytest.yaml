@@ -12,6 +12,9 @@ jobs:
               with:
                 ref: main
 
+            - name: Localizando
+              run: echo $(ls)
+
             - name: Instalando o Python e pip
               uses: actions/setup-python@v5
               with:
