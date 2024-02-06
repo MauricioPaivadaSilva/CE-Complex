@@ -14,7 +14,7 @@
 
 | Tipo do teste | Resultado |
 |---|---|
-| Pytest | [![Resultados](https://github.com/MauricioPaivadaSilva/MCEpy/actions/workflows/pytest.yml/badge.svg)](https://github.com/MauricioPaivadaSilva/MCEpy/actions/workflows/pytest.yml) |
+| Pytest | [![Resultados](https://github.com/MauricioPaivadaSilva/MCEpy/actions/workflows/pytest.yaml/badge.svg)](https://github.com/MauricioPaivadaSilva/MCEpy/actions/workflows/pytest.yaml) |
 
 </div>
 
