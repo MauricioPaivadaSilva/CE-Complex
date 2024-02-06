@@ -21,5 +21,8 @@ jobs:
             - name: Instalação das dependências
               run: pip install -r requirements.txt
 
+            - name: Criar diretório temporário
+              run: mkdir -p temp
+
             - name: Rodando os testes
               run: pytest
