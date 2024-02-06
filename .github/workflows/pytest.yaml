@@ -1,0 +1,11 @@
+name: Testes
+
+on: [push, pull_request]
+
+jobs:
+    Test_in_Linux:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Teste de comando!
+              run: echo $(pwd)
