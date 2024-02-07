@@ -19,7 +19,8 @@ jobs:
                 cache: 'pip'
 
             - name: Instalação das dependências
-              run: pip install -r requirements.txt
+              # run: pip install -r requirements.txt
+              run: pip install .
 
             - name: Criar diretório temporário
               run: mkdir -p temp
