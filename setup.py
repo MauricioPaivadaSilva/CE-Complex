@@ -17,7 +17,7 @@ setup(
         'pytest==8.0.0',
         'Pillow',
     ],
-    packages=['MCEpy'],
+    packages=['.'],
     keywords=[
         "Números Complexos",
         "Circuitos Elétricos",
