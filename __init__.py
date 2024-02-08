@@ -346,7 +346,7 @@ class Animate:
 
         periodo = 1 / self.frequencia
 
-        a, b = ((150 / (self.frequencia))), 0
+        a, b = ((150 / self.frequencia)), 0
 
         for i in range(0, 600):
             t = i / 10.0
@@ -359,8 +359,8 @@ class Animate:
             ####    !!!NÃO APAGAR!!!
             ####
 
-            cic_lim = ((150)/(self.frequencia))
-            cic_lim_ = -1 * ((150 / (self.frequencia)))
+            cic_lim = (150)
+            cic_lim_ = -1 * (150)
 
             if(((a > 0) and (a < (cic_lim + 1))) and (b >= 0)):
                 a -= 1
