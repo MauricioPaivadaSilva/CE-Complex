@@ -173,7 +173,7 @@ class GraphCreate():
             plt.gca().add_patch(eixo_y)
 
             if(test == True):
-                file = os.path.join('.\\temp', 'test_comparar_grafico_sin.png')
+                file = os.path.join('temp', 'test_comparar_grafico_sin.png')
                 plt.savefig(file)
             else:
                 plt.show()
