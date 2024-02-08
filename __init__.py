@@ -2,7 +2,7 @@
 #   Declaração da versão
 #
 
-__version__='0.4.0'
+__version__='0.4.1'
 
 #
 #   Chamada do router
