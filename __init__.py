@@ -408,7 +408,7 @@ class Animate:
 
 class MCEpy:
     def __init__(self, complexo, test):
-        if(test == None):
+        if(test is None):
             if("Hz" not in complexo):
                 if(("i" in complexo) or ("j" in complexo)):
                     complexo = complexo[:-1]
@@ -418,34 +418,34 @@ class MCEpy:
                         complexo = complexo.split('-')
                         R = -float(complexo[1])
                         Im = -float(complexo[2])
-                        return(GraphCreate.Calculate(R, Im, False))
+                        GraphCreate.Calculate(R, Im, False)
                     elif(cont_sig == 1):
                         if('+' in complexo):
                             complexo = complexo.split("+")
                             R = float(complexo[0])
                             Im = float(complexo[1])
-                            return(GraphCreate.Calculate(R, Im, False))
+                            GraphCreate.Calculate(R, Im, False)
                         else:
                             complexo = complexo.split("-")
                             if(len(complexo) > 2):
                                 R = float(complexo[0])
                                 Im = -float(complexo[1])
-                                return(GraphCreate.Calculate(R, Im, False))
+                                GraphCreate.Calculate(R, Im, False)
                             else:
                                 R = float(0)
                                 Im = -float(complexo[1])
-                                return(GraphCreate.Calculate(R, Im, False))
+                                GraphCreate.Calculate(R, Im, False)
                     elif(complexo.count('+') == 1):
                         complexo = complexo.split("+")
                         print(complexo)
                         R = float(complexo[0])
                         Im = float(complexo[1])
-                        return(GraphCreate.Calculate(R, Im, False))
+                        GraphCreate.Calculate(R, Im, False)
                     else:
                         print(complexo)
                         R = float(0)
                         Im = float(complexo[0])
-                        return(GraphCreate.Calculate(R, Im, False))
+                        GraphCreate.Calculate(R, Im, False)
                 else:
                     if(complexo == "x" or complexo == "y"):
                         GraphCreate.Calculate(complexo, 0, False)
@@ -453,8 +453,8 @@ class MCEpy:
                         try:
                             real = float(complexo)
                             return(GraphCreate.Calculate(real, 0.0, False))
-                        except:# ValueError:
-                            return(Err.ValorInseridoIncorretamente())
+                        except ValueError:
+                            print(Err.ValorInseridoIncorretamente())
             elif("Hz" in complexo):
                 frequencia = complexo[:-2]
                 frequencia = float(frequencia)
@@ -465,7 +465,7 @@ class MCEpy:
                 )
                 Animate(frequencia, gf1, gf2, None)
             else:
-                return(Err.ValorInseridoIncorretamente)
+                print(Err.ValorInseridoIncorretamente())
         else:
             if(("i" in complexo) or ("j" in complexo)):
                 complexo = complexo[:-1]
@@ -475,40 +475,40 @@ class MCEpy:
                     complexo = complexo.split('-')
                     R = -float(complexo[1])
                     Im = -float(complexo[2])
-                    return(GraphCreate.Calculate(R, Im, True))
+                    GraphCreate.Calculate(R, Im, True)
                 elif(cont_sig == 1):
                     if('+' in complexo):
                         complexo = complexo.split("+")
                         R = float(complexo[0])
                         Im = float(complexo[1])
-                        return(GraphCreate.Calculate(R, Im, True))
+                        GraphCreate.Calculate(R, Im, True)
                     else:
                         complexo = complexo.split("-")
                         if(len(complexo) > 2):
                             R = float(complexo[0])
                             Im = -float(complexo[1])
-                            return(GraphCreate.Calculate(R, Im, True))
+                            GraphCreate.Calculate(R, Im, True)
                         else:
                             R = float(0)
                             Im = -float(complexo[1])
-                            return(GraphCreate.Calculate(R, Im, True))
+                            GraphCreate.Calculate(R, Im, True)
                 elif(complexo.count('+') == 1):
                     complexo = complexo.split("+")
                     print(complexo)
                     R = float(complexo[0])
                     Im = float(complexo[1])
-                    return(GraphCreate.Calculate(R, Im, True))
+                    GraphCreate.Calculate(R, Im, True)
                 else:
                     print(complexo)
                     R = float(0)
                     Im = float(complexo[0])
-                    return(GraphCreate.Calculate(R, Im, True))
+                    GraphCreate.Calculate(R, Im, True)
             else:
                 if(complexo == "x" or complexo == "y"):
                     GraphCreate.Calculate(complexo, 0.0, True)
                 else:
                     try:
                         real = float(complexo)
-                        return(GraphCreate.Calculate(real, 0.0, True))
+                        GraphCreate.Calculate(real, 0.0, True)
                     except ValueError:
-                        return(Err.ValorInseridoIncorretamente())
+                        print(Err.ValorInseridoIncorretamente())
