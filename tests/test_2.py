@@ -11,7 +11,7 @@ import sys
 #   Chamando os arquivos das libs para teste
 #
 
-from ..router import Tratamento as rt
+from ..__init__ import MCEpy as rt
 
 ##  Declarando as vaiáveis globais
 
@@ -38,7 +38,7 @@ else:
 ###   Teste para a geraçãodo gráfico de sin
 
 def test_da_geracao_de_grafico_de_sin_com_x():
-    rt.Complex(let_1, True)
+    rt(let_1, True)
 
     diretorio_script = os.path.dirname(os.path.abspath(__file__))
     origin_sin = os.path.join(diretorio_script, f'..{separador}img', 'origin_sin.png')
@@ -53,7 +53,7 @@ def test_da_geracao_de_grafico_de_sin_com_x():
     os.remove(caminho_arquivo)
 
 def test_da_geracao_de_grafico_de_sin_com_y():
-    rt.Complex(let_2, True)
+    rt(let_2, True)
     
     diretorio_script = os.path.dirname(os.path.abspath(__file__))
     origin_sin = os.path.join(diretorio_script, f'..{separador}img', 'origin_sin.png')
@@ -70,7 +70,7 @@ def test_da_geracao_de_grafico_de_sin_com_y():
 ###   Teste para a geraçãodo gráfico de número complexo
 
 def test_da_geracao_de_grafico_de_vetor_1():
-    rt.Complex(comp_1, True)
+    rt(comp_1, True)
     
     diretorio_script = os.path.dirname(os.path.abspath(__file__))
     origin_sin = os.path.join(diretorio_script, f'..{separador}img', 'origin_vec_1.png')
@@ -85,7 +85,7 @@ def test_da_geracao_de_grafico_de_vetor_1():
     os.remove(caminho_arquivo)
 
 def test_da_geracao_de_grafico_de_vetor_2():
-    rt.Complex(comp_2, True)
+    rt(comp_2, True)
     
     diretorio_script = os.path.dirname(os.path.abspath(__file__))
     origin_sin = os.path.join(diretorio_script, f'..{separador}img', 'origin_vec_2.png')
@@ -100,7 +100,7 @@ def test_da_geracao_de_grafico_de_vetor_2():
     os.remove(caminho_arquivo)
 
 def test_da_geracao_de_grafico_de_vetor_3():
-    rt.Complex(num1, True)
+    rt(num1, True)
     
     diretorio_script = os.path.dirname(os.path.abspath(__file__))
     origin_sin = os.path.join(diretorio_script, f'..{separador}img', 'origin_vec_3.png')
@@ -115,7 +115,7 @@ def test_da_geracao_de_grafico_de_vetor_3():
     os.remove(caminho_arquivo)
 
 def test_da_geracao_de_grafico_de_vetor_4():
-    rt.Complex(num2, True)
+    rt(num2, True)
     
     diretorio_script = os.path.dirname(os.path.abspath(__file__))
     origin_sin = os.path.join(diretorio_script, f'..{separador}img', 'origin_vec_4.png')

@@ -2,8 +2,8 @@
 #   Chamando os arquivos das libs para teste
 #
 
-from ..router import Tratamento as rt
-from ..lib.graph import GraphCreate as GC
+from ..__init__ import MCEpy as rt
+from ..__init__ import GraphCreate as GC
 
 ##  Declarando as vaiáveis globais
 
@@ -17,8 +17,8 @@ let = "a"
 
 ###   Teste para a resposta de valor inserido incorretamente
 
-def test_Valor_Inserido_Incorretamente_ROUTER():
-    result = rt.Complex(let, True)
+def test_Valor_Inserido_Incorretamente_ROUTER__init__():
+    result = rt(let, True)
     esp = "\n      \033[1;31;40mERRO!\033[m \033[0;31;40mValor inserido de forma incorreta.\033[m\n"
 
     assert result == esp, f"\n      \033[1;31;40mERRO!\033[m {result} != {esp}"

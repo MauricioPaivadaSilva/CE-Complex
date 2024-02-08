@@ -17,7 +17,7 @@
 </div>
 
 ## Sobre a biblioteca
-A presente biblioteca aprensenta-se em sua *versão 0.3.5* e tem como foco interpretar dados inseridos em formato de coordenadas e de strings, e desta forma gera os gráficos para representar os dados inseridos.
+A presente biblioteca aprensenta-se em sua *versão 0.4.0* e tem como foco interpretar dados inseridos em formato de coordenadas e de strings, e desta forma gera os gráficos para representar os dados inseridos.
 
 ## Motivação
 
@@ -96,7 +96,7 @@ Para a validação dos das funcionalidades implementadas na lib, são realizados
 
 * Chmada da lib:
 
-`from MCEpy import Tratamento as tr`
+`from MCEpy import MCEpy as mc`
 
 Lembrando que **todos** os dados devem ser inseridos como _str_. Assim como o parametro `None` **deve** ser mantido como segundo argumento, caso seja alterado, a lib irá trabalhar em modo de teste, gerando dados e salvando os mesmos.
 
@@ -106,13 +106,13 @@ Pode ser atribuido como valor imaginário tanto _i_ como _j_. E no caso dos grá
 
 |Exemplos de comandos que podem ser utilizados | Resumo da funcionalidade|
 |---|---|
-| `tr.Complex("x", None)` | Irá gerar um gráfico senoidal estático. |
-| `tr.Complex("y", None)` | Irá gerar um gráfico senoidal estático. |
-| `tr.Complex("5", None)` | Irá gerar um gráfico do ciclo trigonométrico estático, com vetor puramente real. |
-| `tr.Complex("10i", None)` | Irá gerar um gráfico do ciclo trigonométrico estático, com vetor puramente imaginário. |
-| `tr.Complex("2+3i", None)` | Irá gerar um gráfico do ciclo trigonométrico estático em que há o vetor qe indica a representação gráfica do número complexo. No caso, o vetor direcionará para o primeio quadrante.|
-| `tr.Complex("-2-3i", None)`| Irá gerar um gráfico do ciclo trigonométrico estático em que há o vetor qe indica a representação gráfica do número complexo. No caso, o vetor direcionará para o terceiro quadrante. |
-| `tr.Complex("60Hz", None)`| Ira gerar os gráficos animados que se adaptarão confome a frequência inserida. |
+| `mc("x", None)` | Irá gerar um gráfico senoidal estático. |
+| `mc("y", None)` | Irá gerar um gráfico senoidal estático. |
+| `mc("5", None)` | Irá gerar um gráfico do ciclo trigonométrico estático, com vetor puramente real. |
+| `mc("10i", None)` | Irá gerar um gráfico do ciclo trigonométrico estático, com vetor puramente imaginário. |
+| `mc("2+3i", None)` | Irá gerar um gráfico do ciclo trigonométrico estático em que há o vetor qe indica a representação gráfica do número complexo. No caso, o vetor direcionará para o primeio quadrante.|
+| `mc("-2-3i", None)`| Irá gerar um gráfico do ciclo trigonométrico estático em que há o vetor qe indica a representação gráfica do número complexo. No caso, o vetor direcionará para o terceiro quadrante. |
+| `mc("60Hz", None)`| Ira gerar os gráficos animados que se adaptarão confome a frequência inserida. |
 
 </div>
 
