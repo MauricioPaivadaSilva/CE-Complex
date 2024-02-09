@@ -409,7 +409,7 @@ class Animate:
 
 class MCEpy:
     def __init__(self, complexo, test):
-        if(test is None):
+        if(test == "None"):
             if("Hz" not in complexo):
                 if(("i" in complexo) or ("j" in complexo)):
                     complexo = complexo[:-1]
