@@ -66,6 +66,14 @@ O presente projeto tem como motivação o trabalho desenvolvido pelo LABin - Lab
 - [x] Fazer a animação do ciclo trigonométrico;
 - [x] Fazer a animação do gráfico da função senoidal.
 
+### Fluxo de funcionamento das funcionalidades
+
+```mermaid
+graph TD;
+CLI --> MCEpy;
+Requisição de programa --> MCEpy;
+```
+
 ## Resultados obtidos
 
 Para a validação dos das funcionalidades implementadas na lib, são realizados testes em que é validadas as mensagens de erro, pois é importante saber exatamente o que está acontecemdo com no programa em caso de erro. Assim como é realizados testes que validam pixel a pixel da imagem dos gráficos gerados, garantindo a integridade da lib.
