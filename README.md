@@ -68,11 +68,7 @@ O presente projeto tem como motivação o trabalho desenvolvido pelo LABin - Lab
 
 ### Fluxo de funcionamento das funcionalidades
 
-```mermaid
-graph TD;
-    CLI --> MCEpy;
-    Requisição de programa --> MCEpy;
-```
+<img src="img/diagrama.png" alt="Diagrama de funcionamento"/>
 
 ## Resultados obtidos
 
