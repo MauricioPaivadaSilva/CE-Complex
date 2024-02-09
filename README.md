@@ -70,8 +70,8 @@ O presente projeto tem como motivação o trabalho desenvolvido pelo LABin - Lab
 
 ```mermaid
 graph TD;
-CLI --> MCEpy;
-Requisição de programa --> MCEpy;
+    CLI --> MCEpy;
+    Requisição de programa --> MCEpy;
 ```
 
 ## Resultados obtidos
