@@ -15,6 +15,7 @@ __version__='0.4.1'
 import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
 import numpy as np
+from sys import argv as inp
 import os
 
 
@@ -512,3 +513,6 @@ class MCEpy:
                         GraphCreate.Calculate(real, 0.0, True)
                     except ValueError:
                         print(Err.ValorInseridoIncorretamente())
+
+if __name__ == "__main__":
+    MCEpy(inp[1], inp[2])
