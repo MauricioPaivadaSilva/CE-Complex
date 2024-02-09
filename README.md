@@ -2,7 +2,7 @@
 
 # MCEpy
 
-![GitHub top language](https://img.shields.io/github/languages/top/MauricioPaivadaSilva/MCEpy) ![GitHub language count](https://img.shields.io/github/languages/count/MauricioPaivadaSilva/MCEpy) ![GitHub License](https://img.shields.io/github/license/MauricioPaivadaSilva/MCEpy) ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/MauricioPaivadaSilva/MCEpy/main) ![GitHub repo size](https://img.shields.io/github/repo-size/MauricioPaivadaSilva/MCEpy)
+![GitHub top language](https://img.shields.io/github/languages/top/MauricioPaivadaSilva/MCEpy) ![GitHub language count](https://img.shields.io/github/languages/count/MauricioPaivadaSilva/MCEpy) ![GitHub language count](https://img.shields.io/github/languages/count/MauricioPaivadaSilva/MCEpy) ![GitHub License](https://img.shields.io/github/license/MauricioPaivadaSilva/MCEpy) ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/MauricioPaivadaSilva/MCEpy/main) ![GitHub repo size](https://img.shields.io/github/repo-size/MauricioPaivadaSilva/MCEpy)
 
 </div>
 
@@ -17,7 +17,7 @@
 </div>
 
 ## Sobre a biblioteca
-A presente biblioteca aprensenta-se em sua *versão 0.4.1* e tem como foco interpretar dados inseridos em formato de coordenadas e de strings, e desta forma gera os gráficos para representar os dados inseridos.
+A presente biblioteca aprensenta-se em sua *versão 0.4.2* e tem como foco interpretar dados inseridos em formato de coordenadas e de strings, e desta forma gera os gráficos para representar os dados inseridos.
 
 ## Motivação
 
