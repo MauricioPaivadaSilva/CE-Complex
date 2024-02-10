@@ -68,7 +68,7 @@ O presente projeto tem como motivação o trabalho desenvolvido pelo LABin - Lab
 
 ### Fluxo de funcionamento das funcionalidades
 
-<img src="img/diagrama.png" alt="Diagrama de funcionamento"/>
+<img src="img/diagrama.png" alt="Diagrama de funcionamento" width="800"/>
 
 ## Resultados obtidos
 
