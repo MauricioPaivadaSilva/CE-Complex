@@ -62,7 +62,7 @@ O presente projeto tem como motivação o trabalho desenvolvido pelo LABin - Lab
 - [x] Gerar o gráfico de função senoidal;
 - [x] Gerar o ciclo trigonométrico;
 - [x] Gerar o vetor dentro do ciclo trigonométrico;
-- [x] Apresentar mais de um gráfico em uma única tela;
+- [X] Apresentar mais de um gráfico em uma única tela;
 - [x] Fazer a animação do ciclo trigonométrico;
 - [x] Fazer a animação do gráfico da função senoidal.
 
@@ -121,8 +121,5 @@ Pode ser atribuido como valor imaginário tanto _i_ como _j_. E no caso dos grá
 </div>
 
 ## Agradecimentos
-.
 
-.
-
-.
+Agradecimentos em especial para a minha pedagoga e orientadora da iniciação científica M.ª Flávia Manuella de Almeida Ksiaszczyk por proporcionar a oportunidade de gerar tal trabalho. Agradeço também ao professor de Física Dr. Rudinei Celso de Souza Jantsch que nos auxiliou com interpretações físicas dos fenômenos elétricos de forma mais aprofundada.
