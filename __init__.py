@@ -377,7 +377,7 @@ class Animate:
                 b += 1
             
             self.update(time, sin, a, b)
-            plt.pause(1 / 60) # Taxa de atualização = 60 Hz
+            plt.pause(1 / 60) # Taxa de atualização = 60 fps
         
         plt.show()
 

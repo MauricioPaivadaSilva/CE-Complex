@@ -16,8 +16,8 @@
 
 </div>
 
-## Sobre a biblioteca
-A presente biblioteca aprensenta-se em sua *versão 0.4.2* e tem como foco interpretar dados inseridos em formato de coordenadas e de strings, e desta forma gera os gráficos para representar os dados inseridos.
+## Sobre a feature
+A presente feature aprensenta-se em sua *versão 0.4.2* e tem como foco interpretar dados inseridos em formato de coordenadas e de strings, e desta forma gera os gráficos para representar os dados inseridos.
 
 ## Motivação
 
@@ -29,8 +29,8 @@ O presente projeto tem como motivação o trabalho desenvolvido pelo LABin - Lab
 * [Resultados obtidos](#resultados-obtidos)
 * [Formas de utilização](#formas-de-utilização)
 * [Agradecimentos](#agradecimentos)
-## Requisitos e forma de instalação
 
+## Requisitos e forma de instalação
 
 ### Requisitos
 <div align="center">
@@ -72,7 +72,7 @@ O presente projeto tem como motivação o trabalho desenvolvido pelo LABin - Lab
 
 ## Resultados obtidos
 
-Para a validação dos das funcionalidades implementadas na lib, são realizados testes em que é validadas as mensagens de erro, pois é importante saber exatamente o que está acontecemdo com no programa em caso de erro. Assim como é realizados testes que validam pixel a pixel da imagem dos gráficos gerados, garantindo a integridade da lib.
+Para a validação dos das funcionalidades implementadas na feature, são realizados testes em que é validadas as mensagens de erro, pois é importante saber exatamente o que está acontecemdo com no programa em caso de erro. Assim como é realizados testes que validam pixel a pixel da imagem dos gráficos gerados, garantindo a integridade da feature.
 
 ### Gráficos gerados
 
@@ -98,7 +98,7 @@ Para a validação dos das funcionalidades implementadas na lib, são realizados
 
 ## Formas de utilização
 
-* Chmada da lib:
+* Chmada da feature:
 
 `from MCEpy import MCEpy as mc`
 
