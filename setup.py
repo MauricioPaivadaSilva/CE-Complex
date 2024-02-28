@@ -8,7 +8,7 @@ setup(
     long_description=readme,
     long_description_content_type="text/markdown",
     description="Biblioteca para interpretação e criação de dados e gáficos, com o objetivo de trabalhar com números complexos e circuitos elétricos",
-    version="0.4.2",
+    version="0.4.3",
     author="Maurício Paiva da Silva",
     license="MIT Licence",
     install_requires=[
@@ -16,6 +16,7 @@ setup(
         'matplotlib==3.8.2',
         'pytest==8.0.0',
         'Pillow',
+        'PyQt5',
     ],
     packages=['.'],
     keywords=[
