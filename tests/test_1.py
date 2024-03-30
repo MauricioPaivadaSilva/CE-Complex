@@ -1,4 +1,10 @@
 #
+#   Importando a lib os
+#
+
+import os
+
+#
 #   Chamando os arquivos das libs para teste
 #
 
@@ -12,6 +18,11 @@ num2 = "10"
 num3 = 5.0
 num4 = 10.0
 let = "a"
+
+##  Iniciando set da pasta temporária
+
+if not os.path.exists("temp"):
+    os.makedirs("temp")
 
 ##  Realizando teste das respostas de erro
 
