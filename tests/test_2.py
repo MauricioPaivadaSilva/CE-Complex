@@ -21,6 +21,7 @@ num1 = "5"
 num2 = "10i"
 comp_1 = "2+2j"
 comp_2 = "-2-2j"
+comp_3 = "2-2j"
 
 ##  Verificando o sistema operacional
 
@@ -119,6 +120,21 @@ def test_da_geracao_de_grafico_de_vetor_4():
     
     diretorio_script = os.path.dirname(os.path.abspath(__file__))
     origin_sin = os.path.join(diretorio_script, f'..{separador}img', 'origin_vec_4.png')
+    test_img = os.path.join(diretorio_script, f'..{separador}temp', 'test_comparar_grafico_vec.png')
+
+    imagem_grafico1 = Image.open(origin_sin)
+    imagem_grafico2 = Image.open(test_img)
+
+    assert np.array_equal(np.array(imagem_grafico1), np.array(imagem_grafico2))
+    
+    caminho_arquivo = os.path.join(diretorio_script, f'..{separador}temp', 'test_comparar_grafico_vec.png')
+    os.remove(caminho_arquivo)
+
+def test_da_geracao_de_grafico_de_vetor_5():
+    rt(comp_3, True)
+
+    diretorio_script = os.path.dirname(os.path.abspath(__file__))
+    origin_sin = os.path.join(diretorio_script, f'..{separador}img', 'origin_vec_5.png')
     test_img = os.path.join(diretorio_script, f'..{separador}temp', 'test_comparar_grafico_vec.png')
 
     imagem_grafico1 = Image.open(origin_sin)

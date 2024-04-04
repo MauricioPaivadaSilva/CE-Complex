@@ -2,7 +2,7 @@
 #   Declaração da versão
 #
 
-__version__='0.4.2'
+__version__='0.4.4'
 
 #
 #   Chamada do router
@@ -428,7 +428,7 @@ class MCEpy:
                             GraphCreate.Calculate(R, Im, False)
                         else:
                             complexo = complexo.split("-")
-                            if(len(complexo) > 2):
+                            if(len(complexo) == 2):
                                 R = float(complexo[0])
                                 Im = -float(complexo[1])
                                 GraphCreate.Calculate(R, Im, False)
@@ -438,12 +438,10 @@ class MCEpy:
                                 GraphCreate.Calculate(R, Im, False)
                     elif(complexo.count('+') == 1):
                         complexo = complexo.split("+")
-                        print(complexo)
                         R = float(complexo[0])
                         Im = float(complexo[1])
                         GraphCreate.Calculate(R, Im, False)
                     else:
-                        print(complexo)
                         R = float(0)
                         Im = float(complexo[0])
                         GraphCreate.Calculate(R, Im, False)
@@ -485,7 +483,7 @@ class MCEpy:
                         GraphCreate.Calculate(R, Im, True)
                     else:
                         complexo = complexo.split("-")
-                        if(len(complexo) > 2):
+                        if(len(complexo) == 2):
                             R = float(complexo[0])
                             Im = -float(complexo[1])
                             GraphCreate.Calculate(R, Im, True)
@@ -495,12 +493,10 @@ class MCEpy:
                             GraphCreate.Calculate(R, Im, True)
                 elif(complexo.count('+') == 1):
                     complexo = complexo.split("+")
-                    print(complexo)
                     R = float(complexo[0])
                     Im = float(complexo[1])
                     GraphCreate.Calculate(R, Im, True)
                 else:
-                    print(complexo)
                     R = float(0)
                     Im = float(complexo[0])
                     GraphCreate.Calculate(R, Im, True)
