@@ -276,6 +276,8 @@ class Animate:
             lw=2
         )
         self.gf1.set_xlim(0, 61)
+        self.gf1.set_xticks([0, 15, 30, 45, 60])
+        self.gf1.set_xticklabels(['0,00','0,25','0,50','0,75','1'])
         self.gf1.set_ylim(-1.2, 1.2)
         self.gf1.set_xlabel('t (segundos)')
         self.gf1.set_yticks([-1, 0, 1])
