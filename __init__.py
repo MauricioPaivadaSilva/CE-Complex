@@ -275,8 +275,8 @@ class Animate:
             color="red", 
             lw=2
         )
-        self.gf1.set_xlim(0, 61)
-        self.gf1.set_xticks([0, 15, 30, 45, 60])
+        self.gf1.set_xlim(0, 1010)
+        self.gf1.set_xticks([0, 250, 500, 750, 1000])
         self.gf1.set_xticklabels(['0,00','0,25','0,50','0,75','1'])
         self.gf1.set_ylim(-1.2, 1.2)
         self.gf1.set_xlabel('t (segundos)')
@@ -285,7 +285,7 @@ class Animate:
 
         eixo_x = mpatches.FancyArrowPatch(
             (0, 0),
-            (61, 0),
+            (1010, 0),
             color='black',
             mutation_scale=15,
             arrowstyle='->'
@@ -351,9 +351,9 @@ class Animate:
 
         a, b = ((150 / self.frequencia)), 0
 
-        for i in range(0, 600):
-            t = i / 10.0
-            r = (np.pi * t)/180
+        for i in range(0, 1000):
+            t = i
+            r = (np.pi * t)/3150
             sin.append(np.sin(2 * np.pi * (r/periodo)))
             time.append(t)
 
