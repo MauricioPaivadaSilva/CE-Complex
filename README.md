@@ -17,7 +17,7 @@
 </div>
 
 ## Sobre a feature
-A presente feature aprensenta-se em sua *versão 0.4.6*, sendo desenvolvida como parte do Programa Institucional de Bolsas de Iniciação Científica (PIBIC) e tem como foco interpretar dados inseridos em formato de coordenadas e de strings, e desta forma gera os gráficos para representar os dados inseridos.
+A presente feature aprensenta-se em sua *versão 0.4.7*, sendo desenvolvida como parte do Programa Institucional de Bolsas de Iniciação Científica (PIBIC) e tem como foco interpretar dados inseridos em formato de coordenadas e de strings, e desta forma gera os gráficos para representar os dados inseridos.
 
 ## Motivação
 

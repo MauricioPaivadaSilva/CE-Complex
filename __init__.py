@@ -2,7 +2,7 @@
 #   Declaração da versão
 #
 
-__version__='0.4.6'
+__version__='0.4.7'
 
 #
 #   Chamada do router
@@ -283,6 +283,11 @@ class Animate:
         self.gf1.set_yticks([-1, 0, 1])
         self.gf1.set_yticklabels(['-127V', '0V', '127V'])
 
+        self.gf1.plot([250,250], [-1.2,1.2], color="gray", linestyle="--")
+        self.gf1.plot([500,500], [-1.2,1.2], color="gray", linestyle="--")
+        self.gf1.plot([750,750], [-1.2,1.2], color="gray", linestyle="--")
+        self.gf1.plot([1000,1000], [-1.2,1.2], color="gray", linestyle="--")
+
         eixo_x = mpatches.FancyArrowPatch(
             (0, 0),
             (1010, 0),
@@ -321,6 +326,7 @@ class Animate:
         self.gf2.set_yticks([-1, 0, 1])
         self.gf2.set_yticklabels(['-i', '0', 'i'])
 
+        
         eixo_x_cic = mpatches.FancyArrowPatch(
             (-1.2, 0),
             (1.2, 0),
