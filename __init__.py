@@ -2,7 +2,7 @@
 #   Declaração da versão
 #
 
-__version__='0.4.7'
+__version__='0.4.8'
 
 #
 #   Chamada do router
@@ -371,18 +371,20 @@ class Animate:
             cic_lim = (1000 / periodo)
             cic_lim_ = -1 * (1000 / periodo)
 
+            nv = (1/1.6619)
+
             if(((a > 0) and (a < (cic_lim + 1))) and (b >= 0)):
-                a -= 1/1.6619
-                b += 1/1.6619
+                a -= nv
+                b += nv
             elif(((a <= 0) and (a > (cic_lim_ - 1))) and (b > 0)):
-                a -= 1/1.6619
-                b -= 1/1.6619
+                a -= nv
+                b -= nv
             elif(((a < 0) and (a >= cic_lim_))):
-                a += 1/1.6619
-                b -= 1/1.6619
+                a += nv
+                b -= nv
             elif(((a >= 0) and (a < (cic_lim + 1))) and (b > (cic_lim_ - 1))):
-                a += 1/1.6619
-                b += 1/1.6619
+                a += nv
+                b += nv
             
             self.update(time, sin, a, b)
             plt.pause(1 / 60) # Taxa de atualização = 60 fps
