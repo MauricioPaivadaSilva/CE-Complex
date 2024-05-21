@@ -368,21 +368,21 @@ class Animate:
             ####    !!!NÃO APAGAR!!!
             ####
 
-            cic_lim = (150)
-            cic_lim_ = -1 * (150)
+            cic_lim = (1000 / periodo)
+            cic_lim_ = -1 * (1000 / periodo)
 
             if(((a > 0) and (a < (cic_lim + 1))) and (b >= 0)):
-                a -= 1
-                b += 1
+                a -= 1/1.6619
+                b += 1/1.6619
             elif(((a <= 0) and (a > (cic_lim_ - 1))) and (b > 0)):
-                a -= 1
-                b -= 1
+                a -= 1/1.6619
+                b -= 1/1.6619
             elif(((a < 0) and (a >= cic_lim_))):
-                a += 1
-                b -= 1
+                a += 1/1.6619
+                b -= 1/1.6619
             elif(((a >= 0) and (a < (cic_lim + 1))) and (b > (cic_lim_ - 1))):
-                a += 1
-                b += 1
+                a += 1/1.6619
+                b += 1/1.6619
             
             self.update(time, sin, a, b)
             plt.pause(1 / 60) # Taxa de atualização = 60 fps
