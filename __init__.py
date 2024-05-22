@@ -467,6 +467,8 @@ class MCEpy:
             elif("Hz" in complexo):
                 frequencia = complexo[:-2]
                 frequencia = float(frequencia)
+                if(frequencia == 0.0):
+                    frequencia = 1.0
                 fig, (gf2, gf1) = plt.subplots(
                     nrows=2, 
                     ncols=1, 
