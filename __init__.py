@@ -2,7 +2,7 @@
 #   Declaração da versão
 #
 
-__version__='0.4.8'
+__version__='0.4.9'
 
 #
 #   Chamada do router
@@ -422,7 +422,13 @@ class MCEpy:
         if(test == "None"):
             if("Hz" not in complexo):
                 if(("i" in complexo) or ("j" in complexo)):
-                    complexo = complexo[:-1]
+                    if("i" in complexo):
+                        comp = complexo.split("i")
+                        complexo = (f"{comp[0]}{comp[1]}")
+                    elif("j" in complexo):
+                        comp = complexo.split("j")
+                        complexo = (f"{comp[0]}{comp[1]}")
+                    
                     cont_sig = complexo.count('-')
 
                     if(cont_sig == 2):
