@@ -2,7 +2,7 @@
 #   Declaração da versão
 #
 
-__version__='0.4.9'
+__version__='0.4.10'
 
 #
 #   Chamada do router
@@ -11,6 +11,9 @@ __version__='0.4.9'
 #
 #   Chamada das dependências necessárias
 #
+
+import matplotlib
+matplotlib.use('TkAgg')
 
 import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
@@ -424,9 +427,21 @@ class MCEpy:
                 if(("i" in complexo) or ("j" in complexo)):
                     if("i" in complexo):
                         comp = complexo.split("i")
+                        if("," in comp[0]):
+                            fl = comp[0].split(",")
+                            comp[0] = (f"{fl[0]}.{fl[1]}")
+                        if("," in comp[1]):
+                            fl = comp[1].split(",")
+                            comp[1] = (f"{fl[0]}.{fl[1]}")
                         complexo = (f"{comp[0]}{comp[1]}")
                     elif("j" in complexo):
                         comp = complexo.split("j")
+                        if("," in comp[0]):
+                            fl = comp[0].split(",")
+                            comp[0] = (f"{fl[0]}.{fl[1]}")
+                        if("," in comp[1]):
+                            fl = comp[1].split(",")
+                            comp[1] = (f"{fl[0]}.{fl[1]}")
                         complexo = (f"{comp[0]}{comp[1]}")
                     
                     cont_sig = complexo.count('-')
@@ -485,7 +500,25 @@ class MCEpy:
                 print(Err.ValorInseridoIncorretamente())
         else:
             if(("i" in complexo) or ("j" in complexo)):
-                complexo = complexo[:-1]
+                if("i" in complexo):
+                    comp = complexo.split("i")
+                    if("," in comp[0]):
+                        fl = comp[0].split(",")
+                        comp[0] = (f"{fl[0]}.{fl[1]}")
+                    if("," in comp[1]):
+                        fl = comp[1].split(",")
+                        comp[1] = (f"{fl[0]}.{fl[1]}")
+                    complexo = (f"{comp[0]}{comp[1]}")
+                elif("j" in complexo):
+                    comp = complexo.split("j")
+                    if("," in comp[0]):
+                        fl = comp[0].split(",")
+                        comp[0] = (f"{fl[0]}.{fl[1]}")
+                    if("," in comp[1]):
+                        fl = comp[1].split(",")
+                        comp[1] = (f"{fl[0]}.{fl[1]}")
+                    complexo = (f"{comp[0]}{comp[1]}")
+                
                 cont_sig = complexo.count('-')
 
                 if(cont_sig == 2):
