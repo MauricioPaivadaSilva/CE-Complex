@@ -2,7 +2,7 @@
 #   Declaração da versão
 #
 
-__version__='0.4.10'
+__version__='0.4.11'
 
 #
 #   Chamada do router
@@ -20,6 +20,7 @@ import matplotlib.patches as mpatches
 import numpy as np
 from sys import argv as inp
 import os
+import sys
 
 
 ##  Criação de variáveis globais
@@ -53,6 +54,12 @@ class Err:
     def ValorInseridoIncorretamente():
         return("\n      \033[1;31;40mERRO!\033[m \033[0;31;40mValor inserido de forma incorreta.\033[m\n")
 
+#
+#   Função para encerrar a janela
+#
+
+def closed(event):
+    sys.exit()
 
 ################################################################
 ######      Início do código de criação do gráfico        ######
@@ -129,7 +136,6 @@ class GraphCreate():
         GraphCreate.Graphcreate(num1, eq, test)
         
     def Graphcreate(num1, num2, test):    #   Criação do gráfico
-
         plt.clf()
         
         #   Importação das variáveis globais
@@ -245,6 +251,7 @@ class GraphCreate():
 
         rad.clear()
         sin.clear()
+        plt.gcf().canvas.mpl_connect('close_event', closed)
 
 
 ######################################################
@@ -352,6 +359,7 @@ class Animate:
     ##   Função de animação dos gráficos
 
     def animate(self):
+        plt.gcf().canvas.mpl_connect('close_event', closed)
 
         sin = []
         time = []
@@ -397,6 +405,7 @@ class Animate:
     ##  Função que atualiza os gráficos
     
     def update(self, time, sin, a, b):
+        plt.gcf().canvas.mpl_connect('close_event', closed)
 
         ### Atualiza o gráfico senoidal
 
