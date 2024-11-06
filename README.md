@@ -17,7 +17,7 @@
 </div>
 
 ## Sobre a feature
-A presente _feature_ apresenta-se em sua _versão 0.4.11_, sendo desenvolvida como parte do Programa Institucional de Bolsas de Iniciação Científica (PIBIC). Tem como foco interpretar dados inseridos como _strings_ (em formato de coordenadas ou frequência), gerando gráficos para representar visualmente os fenômenos elétricos em Corrente Alternada.
+A presente _feature_ apresenta-se em sua _versão 0.4.12_, sendo desenvolvida como parte do Programa Institucional de Bolsas de Iniciação Científica (PIBIC). Tem como foco interpretar dados inseridos como _strings_ (em formato de coordenadas ou frequência), gerando gráficos para representar visualmente os fenômenos elétricos em Corrente Alternada.
 
 ## Motivação
 

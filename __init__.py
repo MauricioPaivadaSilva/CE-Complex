@@ -2,7 +2,7 @@
 #   Declaração da versão
 #
 
-__version__='0.4.11'
+__version__='0.4.12'
 
 #
 #   Chamada do router
@@ -136,6 +136,7 @@ class GraphCreate():
         GraphCreate.Graphcreate(num1, eq, test)
         
     def Graphcreate(num1, num2, test):    #   Criação do gráfico
+        plt.gcf().canvas.mpl_connect('close_event', closed)
         plt.clf()
         
         #   Importação das variáveis globais
@@ -251,7 +252,6 @@ class GraphCreate():
 
         rad.clear()
         sin.clear()
-        plt.gcf().canvas.mpl_connect('close_event', closed)
 
 
 ######################################################
